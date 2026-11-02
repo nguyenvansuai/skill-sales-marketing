@@ -36,6 +36,15 @@ def chia_thang(tong, he_so):
     return phan
 
 
+def la_dem(k):
+    # Chỉ số đếm được (đơn, lead, hợp đồng, điểm bán…) → làm tròn LÊN thành số nguyên.
+    return k.startswith(("Số ", "Điểm "))
+
+
+def dem(v):
+    return in_tien(math.ceil(v - 1e-9)) if v is not None else "—"
+
+
 def b2c(dt, a, nhan):
     aov = doc_tien(a.aov)
     chot = doc_phan_tram(a.ty_le_chot) * nhan["ty_le"]
@@ -97,7 +106,8 @@ def main(argv=None):
     p.add_argument("--so-ngay-du-lieu", type=int, help="số ngày dữ liệu dùng để tính tỷ lệ")
     # b2c
     p.add_argument("--aov"); p.add_argument("--ty-le-chot"); p.add_argument("--chi-phi-lead")
-    p.add_argument("--doanh-thu-khach-cu"); p.add_argument("--bien-truoc-ads")
+    p.add_argument("--doanh-thu-khach-cu", help="TỶ LỆ %% doanh thu đến từ khách cũ (không cần quảng cáo), vd 20%%")
+    p.add_argument("--bien-truoc-ads", help="biên đóng góp trước ads %% (từ gia-san-pham-khuyen-mai)")
     # b2b
     p.add_argument("--gia-tri-hop-dong"); p.add_argument("--ty-le-thang"); p.add_argument("--ty-le-lead-co-hoi")
     p.add_argument("--ty-le-hoat-dong-lead"); p.add_argument("--so-sales", type=int); p.add_argument("--chu-ky-ngay", type=int)
@@ -119,7 +129,10 @@ def main(argv=None):
         # hệ số cách nhau bằng dấu phẩy, phần thập phân dùng dấu chấm: 1,1,1.5
         he_so = [float(x) for x in a.he_so_mua_vu.split(",")] if a.he_so_mua_vu else [1.0] * a.so_thang
     except (SoKhongDoc, ValueError) as exc:
-        print(f"[?] {exc}")
+        if isinstance(exc, ZeroDivisionError):
+            print("[?] Có tham số bằng 0 (giá trị đơn, tỷ lệ chốt, doanh thu/điểm…) — kiểm tra lại số liệu đầu vào.")
+        else:
+            print(f"[?] {exc}")
         return 2
     if len(he_so) != a.so_thang:
         print(f"[?] --he-so-mua-vu có {len(he_so)} giá trị, khác --so-thang {a.so_thang}.")
@@ -140,21 +153,24 @@ def main(argv=None):
             else:
                 ket_qua[ten] = dai_ly(dt, a, nhan, a.so_thang)
     except (SoKhongDoc, ZeroDivisionError) as exc:
-        print(f"[?] {exc}")
+        if isinstance(exc, ZeroDivisionError):
+            print("[?] Có tham số bằng 0 (giá trị đơn, tỷ lệ chốt, doanh thu/điểm…) — kiểm tra lại số liệu đầu vào.")
+        else:
+            print(f"[?] {exc}")
         return 2
 
     co_so = ket_qua["Cơ sở (số thật)"]
     ten_mh = {"b2c": "B2C", "b2b": "B2B", "dai-ly": "ĐẠI LÝ / ĐIỂM BÁN"}[a.mo_hinh]
     print(f"## Tính KPI ngược — mô hình {ten_mh}, doanh thu {in_tien(dt)} đồng / {a.so_thang} tháng\n")
     if a.mo_hinh == "b2c":
-        ket_luan = (f"Cần khoảng {in_tien(co_so['Số tin nhắn/lead cần'])} tin nhắn/lead và ngân sách "
+        ket_luan = (f"Cần khoảng {dem(co_so['Số tin nhắn/lead cần'])} tin nhắn/lead và ngân sách "
                     f"{in_tien(co_so['Ngân sách quảng cáo'])} đồng (kịch bản cơ sở).")
         if co_so.get("_lo"):
             ket_luan += " **CẢNH BÁO: CAC kế hoạch cao hơn CPA hòa vốn — kế hoạch này lỗ trên mỗi đơn mới.**"
     elif a.mo_hinh == "b2b":
-        ket_luan = f"Cần {in_tien(co_so['Số lead cần'])} lead → {in_tien(co_so['Số cơ hội (đã đánh giá) cần'], 1)} cơ hội → {in_tien(co_so['Số hợp đồng cần'], 1)} hợp đồng."
+        ket_luan = f"Cần {dem(co_so['Số lead cần'])} lead → {dem(co_so['Số cơ hội (đã đánh giá) cần'])} cơ hội → {dem(co_so['Số hợp đồng cần'])} hợp đồng."
     else:
-        ket_luan = f"Cần bình quân {in_tien(co_so['Số điểm bán hoạt động bình quân cần'], 1)} điểm bán hoạt động; mở mới {in_tien(co_so['Số điểm cần mở mới'], 1)} điểm."
+        ket_luan = f"Cần bình quân {dem(co_so['Số điểm bán hoạt động bình quân cần'])} điểm bán hoạt động; mở mới {dem(co_so['Số điểm cần mở mới'])} điểm."
     print(f"**Kết luận:** {ket_luan}\n")
 
     chi_so = [k for k in co_so if not k.startswith("_")]
@@ -164,7 +180,7 @@ def main(argv=None):
         vals = []
         for ten in kb:
             v = ket_qua[ten].get(k)
-            vals.append(in_tien(v, 2) if "ROAS" in k else in_tien(v, 1) if v is not None and v < 100 and "Ngân sách" not in k else in_tien(v))
+            vals.append(dem(v) if la_dem(k) else in_tien(v, 2) if "ROAS" in k else in_tien(v, 1) if v is not None and v < 100 and "Ngân sách" not in k else in_tien(v))
         print(f"| {k} | " + " | ".join(vals) + " |")
 
     # Chia tháng cho kịch bản cơ sở
@@ -175,7 +191,7 @@ def main(argv=None):
     dt_thang = chia_thang(dt, he_so)
     for i, (h, d_t) in enumerate(zip(he_so, dt_thang), 1):
         ty = d_t / dt
-        hang = [in_tien(d_t)] + [in_tien(co_so[k] * ty, 0 if co_so[k] * ty >= 100 else 1) for k in cot[1:]]
+        hang = [in_tien(d_t)] + [dem(co_so[k] * ty) if la_dem(k) else in_tien(co_so[k] * ty) for k in cot[1:]]
         print(f"| {i} | {str(h).replace('.', ',')} | " + " | ".join(hang) + " |")
 
     if a.mo_hinh == "b2b":
@@ -186,6 +202,7 @@ def main(argv=None):
         if a.chu_ky_ngay:
             can.append(f"Chu kỳ bán {a.chu_ky_ngay} ngày: lead của {a.chu_ky_ngay} ngày cuối kỳ khó kịp thành hợp đồng trong kỳ — dồn tạo lead vào đầu kỳ.")
 
+    print("\nSố đếm được (đơn, lead, hợp đồng, điểm bán) làm tròn lên từng ô — tổng các tháng có thể lớn hơn số của cả kỳ; dùng số cả kỳ làm chỉ tiêu tổng.")
     print("\nĐã kiểm tra phép tính (tổng các tháng = doanh thu mục tiêu).")
     print(f"Kịch bản Xấu/Tốt = tỷ lệ chuyển đổi ∓{a.do_nhay:g}% và chi phí ±{a.do_nhay:g}% quanh số thật — **giả định độ nhạy, không phải số trung bình ngành**.")
     if can:

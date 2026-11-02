@@ -49,7 +49,7 @@ DOCTYPES = {
 # Từ ngữ như thuốc. "trị" đứng một mình quá rộng (trị giá) → chỉ bắt các cụm cụ thể.
 THUOC_RE = re.compile(
     r"(?<!\w)(điều trị|chữa khỏi|chữa trị|chữa bệnh|đặc trị|trị dứt điểm|trị tận gốc|khỏi hẳn|khỏi bệnh|"
-    r"dứt điểm|thay thế thuốc|kháng sinh|kháng viêm|tiêu viêm|liều dùng|phác đồ|trị mụn|trị nám|trị hói|"
+    r"dứt điểm|tận gốc|thay thế thuốc|kháng sinh|kháng viêm|tiêu viêm|liều dùng|phác đồ|trị mụn|trị nám|trị hói|"
     r"trị sẹo|trị viêm|giảm đau|hạ huyết áp|hạ đường huyết|ngừa ung thư|chống ung thư|tăng chiều cao vượt trội)(?!\w)",
     re.IGNORECASE)
 Y_TE_RE = re.compile(r"(?<!\w)(bác sĩ|bs\.|dược sĩ|bệnh viện|phòng khám|y tá|chuyên gia da liễu|áo blouse)(?!\w)", re.IGNORECASE)
@@ -62,6 +62,7 @@ GIAM_RE = re.compile(
 TAP_TRUNG_RE = re.compile(r"(?:<!--|//|/\*|#)\s*khuyen-mai-tap-trung\s*:|khuyến mại tập trung", re.IGNORECASE)
 SO_SANH_RE = re.compile(
     r"(?<!\w)(?:(?i:rẻ|tốt|nhanh|bền|đẹp|mạnh|hiệu quả|chất lượng|an toàn)\s+hơn\s+(?:hẳn\s+)?(?=[A-ZĐ][\w]+)|"
+    r"hơn\s+(?:hẳn\s+)?(?:các\s+|mọi\s+)?(?:hãng|thương hiệu|sản phẩm|loại|bên|shop|đối thủ)(?:\s+khác)?|"
     r"vượt trội so với|so với (?:các )?(?:hãng|thương hiệu|sản phẩm|shop|bên|đối thủ)\s+(?:khác|\w+))",
     re.UNICODE)
 PROOF_RE = re.compile(r"(?:<!--|//|/\*|#)\s*proof\s*:", re.IGNORECASE)

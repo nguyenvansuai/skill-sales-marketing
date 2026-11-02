@@ -84,13 +84,13 @@ skills/<ten-skill>/SKILL.md · references/ · scripts/
 shared/                 # nguyen-tac-chung.md, phap-ly-marketing-vn.md, scripts/vn_money.py — SỬA Ở ĐÂY
 van-ban/                # toàn văn văn bản pháp luật (nguồn, ngày lấy)
 qua-tang/               # file Excel dùng ngay
-tests/du-lieu-mau/      # dữ liệu mẫu có lỗi cố ý để chạy thử script
+tests/                  # chay_kiem_thu.py + du-lieu-mau/ (dữ liệu có lỗi cố ý)
 docs/ke-hoach.md        # kế hoạch, bảng trường hợp
 chatgpt/ dist/ .claude-plugin/marketplace.json   # sinh tự động
 scripts/build.py        # đồng bộ shared → skills, sinh bản ChatGPT/zip/marketplace, kiểm lỗi
 ```
 
-Sửa pháp lý hoặc nguyên tắc: sửa `shared/` → `python3 scripts/build.py` → commit ghi rõ thay đổi.
+Sửa pháp lý hoặc nguyên tắc: sửa `shared/` → `python3 scripts/build.py` → `python3 tests/chay_kiem_thu.py` (18 tình huống có lỗi cố ý, số mong đợi tính tay) → commit ghi rõ thay đổi.
 
 ## Lưu ý pháp lý
 

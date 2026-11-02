@@ -138,8 +138,13 @@ def main(argv=None):
         print(f"| Chiết khấu thương mại {in_pt(ck)} | -{in_tien(tien_ck)} |")
     if not a.khong_vat:
         print(f"| Tiền thuế GTGT | {in_tien(thue)} |")
-    print(f"| **Tổng thanh toán** | **{in_tien(tong)}** |")
-    print(f"\nBằng chữ: *{doc_so(round(tong))}*.\n")
+    thieu_ts = any("thiếu thuế suất" in c for c in can)
+    if thieu_ts:
+        print(f"| **Tổng thanh toán (TẠM TÍNH — còn dòng thiếu thuế suất, chưa gửi khách)** | **{in_tien(tong)} [?]** |")
+        print("\nBằng chữ: *[chờ xác định thuế suất]*.\n")
+    else:
+        print(f"| **Tổng thanh toán** | **{in_tien(tong)}** |")
+        print(f"\nBằng chữ: *{doc_so(round(tong))}*.\n")
     print(f"**Điều kiện thanh toán:** {a.thanh_toan}  \n**Giao hàng:** {a.giao_hang}  \n"
           f"**Giá trên {'đã bao gồm thuế (bên bán không tách thuế GTGT)' if a.khong_vat else 'đã tách thuế GTGT theo từng dòng'}.**\n")
     print("Trân trọng,  \n[Tên, chức danh, SĐT người báo giá]\n")
