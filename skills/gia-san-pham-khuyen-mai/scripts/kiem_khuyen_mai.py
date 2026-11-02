@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Kiểm tra một chương trình khuyến mại theo NĐ 81/2018 (sửa bởi NĐ 128/2024, NĐ 239/2026).
+"""Kiểm tra một chương trình khuyến mại theo NĐ 81/2018 (sửa bởi NĐ 128/2024, NĐ 239/2026) và TT 39/2025/TT-BCT (trần 50%/100%).
 
 In ra: hợp lệ hay không, giới hạn áp dụng, thủ tục phải làm, căn cứ và nhãn tin cậy.
 Căn cứ chi tiết: references/phap-ly-marketing-vn.md mục 3. Không phải tư vấn pháp lý.
@@ -27,7 +27,7 @@ from vn_money import SoKhongDoc, doc_phan_tram, doc_tien, in_pt, in_tien  # noqa
 
 NGAY_TONG_HOP = "02/11/2026"
 
-# Hàng hóa, dịch vụ không được khuyến mại / dùng để khuyến mại (Điều 5 NĐ 81/2018 sau NĐ 239/2026) [THỨ CẤP]
+# Hàng hóa, dịch vụ không được khuyến mại / dùng để khuyến mại (Điều 5 NĐ 81/2018 sửa bởi Điều 1 NĐ 239/2026) [NGUYÊN VĂN]
 CAM = {
     "rượu": "rượu", "xổ số": "xổ số", "vé số": "xổ số", "thuốc lá": "thuốc lá", "thuốc lá điện tử": "thuốc lá",
     "sữa thay thế sữa mẹ": "sữa thay thế sữa mẹ", "sữa công thức": "sữa thay thế sữa mẹ [CẦN KIỂM TRA theo độ tuổi]",
@@ -37,7 +37,8 @@ CAN_KIEM_TRA = {
     "bia": "bia — đối chiếu Luật Phòng, chống tác hại của rượu, bia [CẦN KIỂM TRA]",
     "thuốc": "thuốc — chỉ thuốc kê đơn bị cấm khuyến mại cho người tiêu dùng; thuốc không kê đơn theo pháp luật dược [CẦN KIỂM TRA]",
     "khám bệnh": "dịch vụ khám chữa bệnh — cấm nếu là cơ sở công lập",
-    "học phí": "dịch vụ giáo dục — cấm nếu là cơ sở công lập",
+    "học phí": "dịch vụ giáo dục — cấm nếu là cơ sở giáo dục công lập hoặc cơ sở giáo dục nghề nghiệp công lập",
+    "hàng cấm khuyến mại": "hàng cấm khuyến mại theo Điều 100 Luật Thương mại",
 }
 
 HINH_THUC = {
@@ -52,7 +53,7 @@ HINH_THUC = {
     "van-hoa-giai-tri": "Chương trình văn hóa, nghệ thuật, giải trí (khoản 8 Điều 92 Luật Thương mại)",
 }
 
-# Hình thức không chịu hạn mức 50% giá trị hàng dùng để khuyến mại (Điều 6 sau NĐ 128/2024) [THỨ CẤP]
+# Hình thức không chịu hạn mức 50% giá trị hàng dùng để khuyến mại (khoản 1 Điều 3 TT 39/2025/TT-BCT) [NGUYÊN VĂN]
 KHONG_HAN_MUC_QUA = {"hang-mau", "tang-khong-kem-mua", "phieu-du-thi", "may-rui", "khach-hang-thuong-xuyen", "van-hoa-giai-tri"}
 
 
@@ -81,7 +82,7 @@ def kiem(a):
     cam, can_mh = kiem_mat_hang(a.mat_hang or "")
     if cam:
         hop_le = False
-        gioi_han.append("Mặt hàng thuộc danh mục **không được khuyến mại / dùng để khuyến mại**: " + "; ".join(cam) + " — Điều 5 NĐ 81/2018 (sau NĐ 239/2026) [THỨ CẤP].")
+        gioi_han.append("Mặt hàng thuộc danh mục **không được khuyến mại / dùng để khuyến mại**: " + "; ".join(cam) + " — Điều 5 NĐ 81/2018 (khoản 2 Điều 17 NĐ 81 sửa bởi NĐ 239/2026) [NGUYÊN VĂN].")
     can += can_mh
 
     if ht == "giam-gia":
@@ -94,61 +95,61 @@ def kiem(a):
         else:
             raise SoKhongDoc("giảm giá cần --muc-giam hoặc --gia-truoc và --gia-sau")
         if a.ngoai_le:
-            gioi_han.append(f"Mức giảm {in_pt(giam)} — **không áp hạn mức** do thuộc ngoại lệ '{a.ngoai_le}' (khoản 3 Điều 7 NĐ 81/2018) [NGUYÊN VĂN]. Giữ hồ sơ chứng minh ngoại lệ.")
+            gioi_han.append(f"Mức giảm {in_pt(giam)} — **không áp hạn mức** do thuộc ngoại lệ '{a.ngoai_le}' (khoản 3 Điều 4 TT 39/2025/TT-BCT) [NGUYÊN VĂN]. Giữ hồ sơ chứng minh ngoại lệ.")
         elif a.tap_trung:
-            gioi_han.append(f"Mức giảm {in_pt(giam)} ≤ 100% (khuyến mại tập trung, khoản 2 Điều 7) [NGUYÊN VĂN]. Ghi rõ tên chương trình khuyến mại tập trung và văn bản tổ chức.")
+            gioi_han.append(f"Mức giảm {in_pt(giam)} ≤ 100% (khuyến mại tập trung, khoản 2 Điều 4 TT 39/2025/TT-BCT; Tết Âm lịch: 30 ngày trước mùng 1) [NGUYÊN VĂN]. Ghi rõ tên chương trình khuyến mại tập trung và văn bản tổ chức.")
             if giam > 1:
                 hop_le = False
         elif giam > 0.5:
             hop_le = False
-            gioi_han.append(f"Mức giảm **{in_pt(giam)} vượt trần 50%** giá ngay trước khuyến mại (khoản 1 Điều 7 NĐ 81/2018 sau NĐ 128/2024) [NGUYÊN VĂN]. Hạ xuống ≤ 50%, hoặc chỉ chạy trong khuyến mại tập trung.")
+            gioi_han.append(f"Mức giảm **{in_pt(giam)} vượt trần 50%** giá ngay trước khuyến mại (khoản 1 Điều 4 TT 39/2025/TT-BCT; NĐ 239/2026 đã bãi bỏ Điều 7 NĐ 81) [NGUYÊN VĂN]. Hạ xuống ≤ 50%, hoặc chỉ chạy trong khuyến mại tập trung.")
         else:
-            gioi_han.append(f"Mức giảm {in_pt(giam)} ≤ trần 50% (khoản 1 Điều 7) [NGUYÊN VĂN].")
-        luu_y.append("Không còn giới hạn tổng 120 ngày/năm cho giảm giá — đã bãi bỏ bởi NĐ 239/2026 từ 26/06/2026 [THỨ CẤP].")
+            gioi_han.append(f"Mức giảm {in_pt(giam)} ≤ trần 50% (khoản 1 Điều 4 TT 39/2025/TT-BCT) [NGUYÊN VĂN].")
+        luu_y.append("Không còn giới hạn tổng 120 ngày/năm cho giảm giá — đã bãi bỏ bởi khoản 2 Điều 11 NĐ 239/2026 từ 26/06/2026 [NGUYÊN VĂN].")
         luu_y.append("'Giá trước khuyến mại' phải là giá thật đã bán ngay trước đó; nâng giá rồi gạch là vi phạm riêng.")
-        thu_tuc.append("Không phải thông báo với Sở Công Thương (sau NĐ 239/2026) [THỨ CẤP]. Vẫn phải công khai thông tin khuyến mại cho khách.")
+        thu_tuc.append("Không phải thông báo với Sở Công Thương (khoản 2 Điều 17 NĐ 81 sửa bởi NĐ 239/2026) [NGUYÊN VĂN]. Vẫn phải công khai thông tin khuyến mại cho khách.")
 
     elif ht in ("tang-qua", "phieu-mua-hang"):
         if a.gia_hang and a.gia_tri_qua:
             gh, gq = doc_tien(a.gia_hang), doc_tien(a.gia_tri_qua)
             ty_le = gq / gh
             if a.tap_trung:
-                gioi_han.append(f"Giá trị quà/phiếu {in_tien(gq)} = {in_pt(ty_le)} giá hàng; trần 100% trong khuyến mại tập trung [THỨ CẤP].")
+                gioi_han.append(f"Giá trị quà/phiếu {in_tien(gq)} = {in_pt(ty_le)} giá hàng; trần 100% trong khuyến mại tập trung (khoản 4 Điều 3 TT 39/2025/TT-BCT) [NGUYÊN VĂN].")
                 hop_le = hop_le and ty_le <= 1
             elif ty_le > 0.5:
                 hop_le = False
-                gioi_han.append(f"Giá trị quà/phiếu **{in_pt(ty_le)} giá hàng — vượt trần 50%** (Điều 6 NĐ 81/2018 sau NĐ 128/2024) [THỨ CẤP].")
+                gioi_han.append(f"Giá trị quà/phiếu **{in_pt(ty_le)} giá hàng — vượt trần 50%** (khoản 1 Điều 3 TT 39/2025/TT-BCT) [NGUYÊN VĂN].")
             else:
-                gioi_han.append(f"Giá trị quà/phiếu {in_pt(ty_le)} giá hàng ≤ 50% (Điều 6) [THỨ CẤP].")
+                gioi_han.append(f"Giá trị quà/phiếu {in_pt(ty_le)} giá hàng ≤ 50% (khoản 1 Điều 3 TT 39/2025/TT-BCT) [NGUYÊN VĂN].")
         else:
             can.append("Thiếu --gia-hang và --gia-tri-qua để kiểm hạn mức 50% giá trị hàng dùng để khuyến mại.")
-        thu_tuc.append("Không phải thông báo (sau NĐ 239/2026) [THỨ CẤP].")
+        thu_tuc.append("Không phải thông báo (khoản 2 Điều 17 NĐ 81 sửa bởi NĐ 239/2026) [NGUYÊN VĂN].")
 
     elif ht == "phieu-du-thi":
         if not a.tong_giai:
             raise SoKhongDoc("phiếu dự thi cần --tong-giai (tổng giá trị giải thưởng, quà tặng)")
         tg = doc_tien(a.tong_giai)
         if tg >= 100e6 and not a.chi_online:
-            thu_tuc.append(f"**Phải thông báo** hoạt động khuyến mại cho Sở Công Thương nơi tổ chức (tổng giải {in_tien(tg)} ≥ 100 triệu và có triển khai ngoài sàn/web/app khuyến mại trực tuyến) — NĐ 239/2026 [THỨ CẤP]. Thông báo trước khi thực hiện, Mẫu số 01 (Điều 17 NĐ 81/2018 hợp nhất) [NGUYÊN VĂN].")
+            thu_tuc.append(f"**Phải thông báo** hoạt động khuyến mại cho Sở Công Thương nơi tổ chức (tổng giải {in_tien(tg)} ≥ 100 triệu và có triển khai ngoài sàn/web/app khuyến mại trực tuyến) — khoản 2 Điều 17 NĐ 81 sửa bởi NĐ 239/2026 [NGUYÊN VĂN]. Hồ sơ phải đến Sở Công Thương **tối thiểu 03 ngày làm việc trước** khi thực hiện, gửi qua bưu chính hoặc Cổng Dịch vụ công quốc gia (khoản 1, 3 Điều 17 sửa bởi NĐ 239/2026) [NGUYÊN VĂN].")
         else:
             ly_do = "chỉ thực hiện qua sàn TMĐT/website/ứng dụng" if a.chi_online else f"tổng giải {in_tien(tg)} < 100 triệu"
-            thu_tuc.append(f"Không phải thông báo ({ly_do}) — NĐ 239/2026 [THỨ CẤP].")
+            thu_tuc.append(f"Không phải thông báo ({ly_do}) — khoản 2 Điều 17 NĐ 81 sửa bởi NĐ 239/2026 [NGUYÊN VĂN].")
         luu_y.append("Thể lệ, cơ cấu giải, thời gian, cách xác định người thắng phải công khai.")
 
     elif ht == "may-rui":
-        thu_tuc.append("Chương trình may rủi (Điều 13): **đăng ký** với cơ quan quản lý thương mại (Sở Công Thương nếu 1 tỉnh, Bộ Công Thương nếu từ 2 tỉnh trở lên) — điều kiện, ngưỡng, cơ quan sau NĐ 128/2024 và NĐ 239/2026 [CẦN KIỂM TRA].")
-        luu_y.append("Xác định trúng thưởng phải có khách chứng kiến (trực tiếp hoặc trực tuyến) — NĐ 239/2026 [THỨ CẤP].")
-        luu_y.append("Giải không có người trúng: trích nộp 50% giá trị vào ngân sách, trừ trường hợp bất khả kháng/trở ngại khách quan — NĐ 239/2026 [THỨ CẤP].")
+        thu_tuc.append("Chương trình may rủi (Điều 13): phải **đăng ký và được xác nhận trước** khi thực hiện (khoản 1 Điều 19 NĐ 81/2018) [NGUYÊN VĂN]; nộp qua bưu chính hoặc Cổng Dịch vụ công quốc gia (khoản 3 Điều 19 sửa bởi NĐ 239/2026) [NGUYÊN VĂN]. Cơ quan tiếp nhận (Sở Công Thương nếu 1 tỉnh, Bộ Công Thương nếu từ 2 tỉnh — khoản 2 Điều 19) sau các đợt phân cấp [CẦN KIỂM TRA].")
+        luu_y.append("Xác định trúng thưởng phải công khai, theo thể lệ, có khách chứng kiến trực tiếp hoặc trực tuyến và lập biên bản — khoản 1 Điều 13 NĐ 81 sửa bởi NĐ 239/2026 [NGUYÊN VĂN].")
+        luu_y.append("Giải không có người trúng: trích nộp 50% giá trị vào ngân sách, trừ giải trao quá hạn do bất khả kháng/trở ngại khách quan — khoản 4, 5 Điều 13 NĐ 81 (khoản 5 sửa bởi NĐ 239/2026) [NGUYÊN VĂN].")
         if a.tong_giai:
             luu_y.append(f"Tổng giải khai báo: {in_tien(doc_tien(a.tong_giai))} đồng.")
 
     elif ht == "khach-hang-thuong-xuyen":
-        thu_tuc.append("Không còn phải thông báo (NĐ 239/2026 bỏ nghĩa vụ thông báo cho chương trình khách hàng thường xuyên) [THỨ CẤP].")
+        thu_tuc.append("Không còn phải thông báo (điểm a khoản 2 Điều 17 NĐ 81 sửa bởi NĐ 239/2026) [NGUYÊN VĂN].")
         luu_y.append("Thể lệ tích điểm, quy đổi, thời hạn điểm phải công khai và áp dụng thống nhất.")
 
     elif ht in ("hang-mau", "tang-khong-kem-mua", "van-hoa-giai-tri"):
-        gioi_han.append("Không chịu hạn mức 50% giá trị hàng dùng để khuyến mại (Điều 6 sau NĐ 128/2024) [THỨ CẤP].")
-        thu_tuc.append("Không phải thông báo (sau NĐ 239/2026) [THỨ CẤP].")
+        gioi_han.append("Không chịu hạn mức 50% giá trị hàng dùng để khuyến mại (khoản 1 Điều 3 TT 39/2025/TT-BCT) [NGUYÊN VĂN].")
+        thu_tuc.append("Không phải thông báo (khoản 2 Điều 17 NĐ 81 sửa bởi NĐ 239/2026) [NGUYÊN VĂN].")
         if ht == "hang-mau":
             luu_y.append("Hàng mẫu phải là hàng đang kinh doanh hoặc sắp kinh doanh; người nhận không phải trả tiền.")
 

@@ -28,7 +28,7 @@ R = số ngày từ lần mua gần nhất · F = số lần mua · M = tổng t
 
 - Tỷ lệ quy đổi điểm → tiền ≤ phần biên doanh nghiệp chấp nhận bỏ ra (từ `gia-san-pham-khuyen-mai`).
 - Hạn sử dụng điểm, điều kiện, cách tra điểm công khai.
-- Không còn phải thông báo khuyến mại cho chương trình khách hàng thường xuyên (NĐ 239/2026 `[THỨ CẤP]`).
+- Không còn phải thông báo khuyến mại cho chương trình khách hàng thường xuyên (điểm a khoản 2 Điều 17 NĐ 81/2018 sửa bởi NĐ 239/2026 `[NGUYÊN VĂN]`).
 
 ## 4. Trả lời khiếu nại / đánh giá xấu
 

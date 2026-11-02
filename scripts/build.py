@@ -108,7 +108,7 @@ def kiem_tra():
         for ref in re.findall(r"`((?:references|scripts)/[\w./-]+)`", body):
             if not (sk / ref).exists():
                 loi.append(f"{sk.name}: thiếu file {ref}")
-        for cu in ("181/2013", "13/2023/NĐ-CP"):
+        for cu in ("181/2013", "13/2023/NĐ-CP", "Điều 7 NĐ 81", "Điều 6 NĐ 81", "Đ7 NĐ 81"):
             for f in [sk / "SKILL.md", *(sk / "references").glob("*.md")]:
                 if f.name == "phap-ly-marketing-vn.md":
                     continue

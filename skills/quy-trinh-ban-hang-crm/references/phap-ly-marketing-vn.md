@@ -17,8 +17,9 @@
 |---|---|---|---|
 | Luật Quảng cáo 16/2012/QH13, sửa bởi **Luật 75/2025/QH15** | Luật 75: 01/01/2026 | Nội dung quảng cáo, KOL/KOC, quảng cáo trên mạng | `[NGUYÊN VĂN]` (van-ban 01, 02) |
 | **NĐ 342/2025/NĐ-CP** hướng dẫn Luật Quảng cáo (thay NĐ 181/2013 và NĐ 70/2021) | 15/02/2026 | Sản phẩm, hàng hóa, dịch vụ đặc biệt | `[NGUYÊN VĂN]` (van-ban 03) |
-| Luật Thương mại 36/2005/QH11; **NĐ 81/2018/NĐ-CP**, hợp nhất với NĐ 128/2024 tại VBHN 26/VBHN-BCT 2024 | NĐ 128: 01/12/2024 | Khuyến mại | `[NGUYÊN VĂN]` (van-ban 04, 10) |
-| **NĐ 239/2026/NĐ-CP** sửa NĐ 81/2018 | 26/06/2026 | Khuyến mại | `[THỨ CẤP]` (chưa có toàn văn) |
+| Luật Thương mại 36/2005/QH11; **NĐ 81/2018/NĐ-CP** (VBHN 26/VBHN-BCT 2024 hợp nhất NĐ 128/2024) | NĐ 128: 01/12/2024 | Khuyến mại | `[NGUYÊN VĂN]` (van-ban 04, 10) |
+| **NĐ 239/2026/NĐ-CP** sửa NĐ 81/2018 | 26/06/2026 | Khuyến mại: hàng cấm, thông báo, may rủi; **bãi bỏ Điều 6, 7 NĐ 81** | `[NGUYÊN VĂN]` (van-ban 11, lấy từ vbpl.vn) |
+| **Thông tư 39/2025/TT-BCT** | 01/07/2025 | **Trần giảm giá 50%, trần giá trị quà tặng 50%, khuyến mại tập trung 100%** | `[NGUYÊN VĂN]` (van-ban 12, lấy từ vbpl.vn) |
 | **Luật Thương mại điện tử 122/2025/QH15** | 01/07/2026 | Bán qua sàn, website, livestream | `[NGUYÊN VĂN]` (van-ban 08) |
 | NĐ 248/2026/NĐ-CP hướng dẫn Luật TMĐT | 01/07/2026 | Livestream, định danh người bán | `[THỨ CẤP]`: phải đối chiếu số hiệu và nội dung |
 | **Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15** + **NĐ 356/2025/NĐ-CP** (thay NĐ 13/2023) | 01/01/2026 | Thu thập SĐT/email, remarketing, CRM | `[NGUYÊN VĂN]` (van-ban 05, 06) |
@@ -37,8 +38,9 @@
 | NĐ 181/2013/NĐ-CP, NĐ 70/2021/NĐ-CP (hướng dẫn quảng cáo) | NĐ 342/2025/NĐ-CP, từ 15/02/2026 |
 | NĐ 13/2023/NĐ-CP (dữ liệu cá nhân) | Luật 91/2025/QH15 + NĐ 356/2025/NĐ-CP, từ 01/01/2026 |
 | Mục 2 Chương IV Luật Thương mại 2005 (quảng cáo thương mại) | Bãi bỏ bởi Luật 75/2025; quảng cáo áp dụng theo Luật Quảng cáo |
-| Giới hạn tổng 120 ngày/năm cho khuyến mại giảm giá (khoản 5 Điều 10 NĐ 81/2018) | Bãi bỏ bởi NĐ 239/2026, từ 26/06/2026 `[THỨ CẤP]` |
-| Thông báo khuyến mại cho chương trình khách hàng thường xuyên (Điều 14) | NĐ 239/2026 bỏ nghĩa vụ này `[THỨ CẤP]` |
+| Giới hạn tổng 120 ngày/năm cho khuyến mại giảm giá (khoản 5 Điều 10 NĐ 81/2018) | Bãi bỏ bởi khoản 2 Điều 11 NĐ 239/2026, từ 26/06/2026 `[NGUYÊN VĂN]` |
+| Điều 6, Điều 7 NĐ 81/2018 (trần 50%) | Bãi bỏ bởi khoản 1 Điều 11 NĐ 239/2026; mức trần nay ở **Điều 3, 4 TT 39/2025/TT-BCT** (con số không đổi) `[NGUYÊN VĂN]` |
+| Thông báo khuyến mại cho chương trình khách hàng thường xuyên (Điều 14) | Bỏ bởi điểm a khoản 2 Điều 17 (sửa bởi NĐ 239/2026) `[NGUYÊN VĂN]` |
 
 ---
 
@@ -113,23 +115,25 @@ Luật 134/2025/QH15 và NĐ 142/2026/NĐ-CP (Điều 18) yêu cầu thông báo
 
 ## 3. Khuyến mại
 
-### 3.1 Mức giảm giá tối đa: Điều 7 NĐ 81/2018 (bản hợp nhất VBHN 26/2024) `[NGUYÊN VĂN]`
+> **Lưu ý căn cứ:** khoản 1 Điều 11 NĐ 239/2026 bãi bỏ Điều 6, Điều 7 NĐ 81/2018; điểm b khoản 1 Điều 32 (sửa bởi Điều 10 NĐ 239/2026) giao Bộ Công Thương quy định hạn mức. Các mức dưới đây nay nằm ở **Thông tư 39/2025/TT-BCT** (nội dung giống Điều 6, 7 cũ). Khi viện dẫn, ghi TT 39/2025, không ghi Điều 6, 7 NĐ 81.
+
+### 3.1 Mức giảm giá tối đa: Điều 4 TT 39/2025/TT-BCT `[NGUYÊN VĂN]`
 - Khoản 1: mức giảm **không vượt quá 50%** giá hàng hóa, dịch vụ đó **ngay trước thời gian khuyến mại**.
-- Khoản 2: mức giảm được lên **100%** khi tổ chức chương trình khuyến mại tập trung (khoản 5 Điều 6), hoặc trong chương trình xúc tiến thương mại do Thủ tướng quyết định.
+- Khoản 2: mức giảm được lên **100%** khi tổ chức chương trình khuyến mại tập trung (khoản 5 Điều 6), hoặc trong chương trình, hoạt động xúc tiến thương mại do cơ quan có thẩm quyền cấp trung ương quyết định.
 - Khoản 3: **không áp dụng hạn mức** cho:
   - hàng hóa, dịch vụ thuộc chính sách bình ổn giá;
   - thực phẩm tươi sống;
   - hàng hóa, dịch vụ khi doanh nghiệp phá sản, giải thể, thay đổi địa điểm hoặc ngành nghề.
 - "Giá trước khuyến mại" phải là giá thật đã bán. Nâng giá gốc lên rồi gạch là gây nhầm lẫn cho người tiêu dùng (điểm a khoản 1 Điều 10 Luật BVQLNTD 2023).
 
-**Khuyến mại tập trung (khoản 5 Điều 6)** gồm:
+**Khuyến mại tập trung (khoản 5 Điều 3 TT 39/2025)** gồm:
 - (a) chương trình do cơ quan nhà nước cấp trung ương hoặc cấp tỉnh quyết định tổ chức;
 - (b) các đợt khuyến mại dịp lễ, tết theo pháp luật lao động:
   - **Tết Âm lịch: 30 ngày ngay trước ngày đầu tiên của năm Âm lịch**;
   - các ngày nghỉ lễ, tết khác: thời hạn khuyến mại không vượt quá thời gian nghỉ của dịp lễ, tết đó.
 - Ngày đôi trên sàn (11.11, 12.12…) **không tự động** là khuyến mại tập trung. Phải kiểm tra có quyết định của cơ quan nhà nước hay không.
 
-### 3.2 Giá trị hàng hóa, dịch vụ dùng để khuyến mại (quà tặng, phiếu mua hàng…): Điều 6 NĐ 81/2018 (bản hợp nhất) `[NGUYÊN VĂN]`
+### 3.2 Giá trị hàng hóa, dịch vụ dùng để khuyến mại (quà tặng, phiếu mua hàng…): Điều 3 TT 39/2025/TT-BCT `[NGUYÊN VĂN]`
 - Khoản 1: giá trị vật chất dùng để khuyến mại cho một đơn vị hàng **không vượt quá 50%** giá bán ngay trước thời gian khuyến mại. Các hình thức sau không bị giới hạn:
   - khoản 8, 9 Điều 92 Luật Thương mại;
   - Điều 8 (hàng mẫu, dùng thử);
@@ -152,14 +156,14 @@ Luật 134/2025/QH15 và NĐ 142/2026/NĐ-CP (Điều 18) yêu cầu thông báo
   - Cơ quan: Sở Công Thương nếu trong 1 tỉnh; Bộ Công Thương nếu từ 2 tỉnh trở lên.
   - Cơ quan tiếp nhận sau phân cấp (NĐ 146/2025) `[CẦN KIỂM TRA]`.
 
-**Thay đổi của NĐ 239/2026 (hiệu lực 26/06/2026)** `[THỨ CẤP]` (KPMG Việt Nam, PwC Việt Nam, 07/2026):
-- **Bãi bỏ giới hạn tổng thời gian** khuyến mại giảm giá (trước đây 120 ngày/năm cho mỗi nhãn hiệu).
-- **Thuốc kê đơn** chỉ được khuyến mại hoặc dùng để khuyến mại giữa các thương nhân kinh doanh thuốc. Thuốc không kê đơn được khuyến mại cho người tiêu dùng theo pháp luật chuyên ngành.
-- Vẫn cấm khuyến mại hoặc dùng để khuyến mại: rượu, xổ số, thuốc lá, sữa thay thế sữa mẹ, dịch vụ khám chữa bệnh và dịch vụ giáo dục của cơ sở công lập, hàng cấm lưu hành.
-- **Chương trình khách hàng thường xuyên** (Điều 14) không còn phải thông báo. Sau NĐ 239, nghĩa vụ thông báo về cơ bản chỉ còn với **phiếu dự thi** (Điều 12) khi tổng giải từ 100 triệu đồng trở lên **và** không chỉ thực hiện qua kênh trực tuyến.
-- Khuyến mại may rủi:
-  - việc xác định trúng thưởng có thể được chứng kiến trực tiếp hoặc trực tuyến;
-  - nghĩa vụ trích nộp 50% giá trị giải không có người trúng (khoản 4 Điều 13) không áp dụng cho trường hợp bất khả kháng hoặc trở ngại khách quan.
+**Thay đổi của NĐ 239/2026 (hiệu lực 26/06/2026)** `[NGUYÊN VĂN]` (van-ban 11):
+- **Điều 1 (sửa Điều 5):** không được khuyến mại / dùng để khuyến mại: rượu, xổ số, thuốc lá, sữa thay thế sữa mẹ, **thuốc kê đơn** (trừ khuyến mại cho thương nhân kinh doanh thuốc), dịch vụ khám chữa bệnh của cơ sở y tế công lập, dịch vụ giáo dục của cơ sở công lập và cơ sở giáo dục nghề nghiệp công lập, hàng cấm lưu hành, hàng cấm khuyến mại theo Điều 100 Luật Thương mại. Tiền được dùng để khuyến mại, trừ hình thức Điều 8, 10, 11.
+- **Điều 2 (sửa khoản 1 Điều 11):** phiếu mua hàng có thể dùng mua hàng của chính thương nhân hoặc thương nhân khác; bên phát hành và bên sử dụng phải tuân thủ pháp luật phòng chống rửa tiền.
+- **Điều 3 (sửa Điều 13, may rủi):** xác định trúng thưởng công khai, theo thể lệ, có khách chứng kiến **trực tiếp hoặc trực tuyến**, lập biên bản; giải trao quá hạn do bất khả kháng/trở ngại khách quan không tính là giải không có người trúng (không phải trích nộp 50%).
+- **Điều 4 (sửa Điều 17, thông báo):** chỉ còn phải thông báo với chương trình **phiếu dự thi (Điều 12)**, trừ khi tổng giải **dưới 100 triệu đồng** hoặc **chỉ** thực hiện qua sàn TMĐT/website/ứng dụng khuyến mại trực tuyến. Hồ sơ phải đến Sở Công Thương **tối thiểu 03 ngày làm việc trước** khi thực hiện; nộp qua bưu chính hoặc Cổng Dịch vụ công quốc gia. Không phải thông báo: hình thức khoản 8 Điều 92 Luật TM, Điều 8, 9, 10, 11, **14** NĐ 81.
+- **Điều 6, 7:** đăng ký (may rủi) và đăng ký sửa đổi nộp qua bưu chính hoặc Cổng Dịch vụ công quốc gia; trả lời đăng ký sửa đổi trong 04 ngày làm việc.
+- **Điều 11:** bãi bỏ Điều 6, 7 NĐ 81 (trần 50% chuyển sang TT 39/2025/TT-BCT); bãi bỏ khoản 5 Điều 10 (**hết giới hạn 120 ngày/năm** cho giảm giá).
+- **Điều 13 (chuyển tiếp):** hồ sơ nộp trước 26/06/2026 làm theo thủ tục cũ.
 
 ---
 
@@ -252,7 +256,7 @@ Mức phạt: không ghi; khuyên hỏi luật sư (NĐ 330/2026/NĐ-CP `[THỨ 
 | So sánh với đối thủ mà không có tài liệu hợp pháp chứng minh | Khoản 10 Điều 8 Luật QC (sửa 2025) |
 | Quảng cáo mỹ phẩm hoặc thực phẩm như thuốc ("điều trị", "chữa khỏi", "đặc trị") | Điều 4, 5 NĐ 342/2025 |
 | KOL/KOC giới thiệu sản phẩm chưa dùng; không thông báo là quảng cáo hoặc được tài trợ | Điều 15a, điểm đ khoản 2 Điều 23 Luật QC (2025); điểm h khoản 1 Điều 10 Luật BVQLNTD |
-| Giảm giá quá 50% ngoài khuyến mại tập trung và các ngoại lệ; nâng giá gốc ảo | Điều 7 NĐ 81/2018; điểm a khoản 1 Điều 10 Luật BVQLNTD |
+| Giảm giá quá 50% ngoài khuyến mại tập trung và các ngoại lệ; nâng giá gốc ảo | Điều 4 TT 39/2025/TT-BCT; điểm a khoản 1 Điều 10 Luật BVQLNTD |
 | Mua danh sách SĐT; nhắn tin, gọi điện cho người chưa đồng ý | Khoản 6 Điều 7 Luật 91/2025; Điều 11, 13 NĐ 91/2020 |
 | Đánh giá giả, mua review, ép đánh giá 5 sao để nhận quà | Điểm a khoản 1 Điều 10 Luật BVQLNTD (gây nhầm lẫn); quy chế sàn |
 | Video hoặc giọng nói AI mô phỏng người thật mà không gắn nhãn | NĐ 142/2026 Điều 18 `[THỨ CẤP]` |
@@ -262,7 +266,7 @@ Mức phạt: không ghi; khuyên hỏi luật sư (NĐ 330/2026/NĐ-CP `[THỨ 
 
 ## 8. Nguồn
 
-**Toàn văn trong repo** (`van-ban/`, lấy ngày 02/11/2026 từ hethongphapluat.com):
+**Toàn văn trong repo** (`van-ban/`, lấy ngày 02/11/2026; file 01–10 từ hethongphapluat.com, file 11–12 từ vbpl.vn):
 
 | File | Văn bản |
 |---|---|
@@ -276,8 +280,9 @@ Mức phạt: không ghi; khuyên hỏi luật sư (NĐ 330/2026/NĐ-CP `[THỨ 
 | 08 | Luật TMĐT 122/2025 |
 | 09 | Luật BVQLNTD 19/2023 |
 | 10 | Luật Thương mại 2005 |
+| 11 | NĐ 239/2026 (vbpl.vn) |
+| 12 | TT 39/2025/TT-BCT (vbpl.vn) |
 
 **Nguồn thứ cấp:**
-- NĐ 239/2026 (KPMG): https://kpmg.com/vn/vi/insights/2026/07/decree-239-on-sales-promotion.html; PwC: https://www.pwc.com/vn/vn/publications/news-brief/260716-decree-239-promotion-schemes.html
 - Dự thảo nghị định thay thế NĐ 91/2020: https://bocongan.gov.vn/media/bca-media/library-20260909084715-c3d4dec4-0f78-459d-96de-3293d10b69b5-4-ban-so-sanh-du-thao.docx
 - NĐ 147/2024, NĐ 117/2025, Luật 134/2025, NĐ 142/2026, NĐ 248/2026, NĐ 330/2026: theo minhnv0807/ai-business-skills, `skills/vi/references/phap-ly-marketing-vn.md` (commit fe33cb1)

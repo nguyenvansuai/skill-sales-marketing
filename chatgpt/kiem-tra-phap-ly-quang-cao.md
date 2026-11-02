@@ -24,7 +24,7 @@ Khác `thuong-hieu-noi-dung`, `quang-cao-truc-tuyen`: skill này **không viết
 
 | # | Trường hợp | `--doctype` | Kiểm thêm | Căn cứ |
 |---|---|---|---|---|
-| A | Nội dung thường (bài, banner, landing) | (không) | Tuyệt đối hóa, so sánh, cam kết 100%, giảm > 50%, từ như thuốc (mức cảnh báo) | Đ8 k10, k11 Luật QC; Đ7 NĐ 81/2018 |
+| A | Nội dung thường (bài, banner, landing) | (không) | Tuyệt đối hóa, so sánh, cam kết 100%, giảm > 50%, từ như thuốc (mức cảnh báo) | Đ8 k10, k11 Luật QC; Đ4 TT 39/2025/TT-BCT |
 | B | Mỹ phẩm | `my-pham` | Từ như thuốc (lỗi); hình ảnh bác sĩ/cơ sở y tế; thông tin tổ chức chịu trách nhiệm | NĐ 342/2025 Đ4 |
 | C | Thực phẩm bảo vệ sức khỏe | `tpbvsk` | Cụm "Thực phẩm bảo vệ sức khỏe" + câu khuyến cáo bắt buộc | NĐ 342/2025 Đ5 |
 | D | Thực phẩm bổ sung / thực phẩm | `thuc-pham-bo-sung` / `thuc-pham` | Cụm từ bắt buộc; tổ chức chịu trách nhiệm | NĐ 342/2025 Đ5 |

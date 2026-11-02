@@ -12,3 +12,4 @@ Lấy ngày 02/11/2026. Khi nguồn cập nhật: so `git log <commit>..HEAD` c�
 Điểm đã sửa so với nguồn (do pháp luật 2026):
 - trussary: `compliance.md` dẫn NĐ 13/2023 (đã thay bằng Luật 91/2025 + NĐ 356/2025) → không chép file này; dùng `shared/phap-ly-marketing-vn.md`. Trích dẫn khoản 11 Điều 8 Luật QC vẫn đúng (Luật 75/2025 không sửa khoản này).
 - Mọi nguồn: giới hạn 120 ngày/năm cho khuyến mại giảm giá đã bị NĐ 239/2026 bãi bỏ; NĐ 181/2013 hết hiệu lực từ 15/02/2026.
+- trussary `MKT002` và minhnv dẫn trần 50% theo "NĐ 81/2018 sửa bởi NĐ 128/2024": Điều 6, 7 NĐ 81 đã bị NĐ 239/2026 bãi bỏ — căn cứ đúng hiện nay là Điều 3, 4 Thông tư 39/2025/TT-BCT (con số 50% không đổi).

@@ -32,7 +32,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from vn_money import SoKhongDoc, doc_phan_tram, doc_tien, in_pt, in_tien  # noqa: E402
 
-TRAN_GIAM_GIA = 0.50  # Điều 7 NĐ 81/2018 (sau NĐ 128/2024) — xem references/phap-ly-marketing-vn.md mục 3.1
+TRAN_GIAM_GIA = 0.50  # khoản 1 Điều 4 TT 39/2025/TT-BCT — xem references/phap-ly-marketing-vn.md mục 3.1
 
 
 def doc_phi(chuoi_phi):
@@ -160,7 +160,7 @@ def bao_cao(a):
             d.append("")
             d += bang_pl(kq2, f"P&L khi giảm {in_pt(giam)}")
             if giam > TRAN_GIAM_GIA:
-                canh_bao.append(f"Mức giảm {in_pt(giam)} vượt trần 50% (Điều 7 NĐ 81/2018 sau NĐ 128/2024) — chỉ hợp lệ trong khuyến mại tập trung hoặc ngoại lệ. Chạy scripts/kiem_khuyen_mai.py.")
+                canh_bao.append(f"Mức giảm {in_pt(giam)} vượt trần 50% (khoản 1 Điều 4 TT 39/2025/TT-BCT) — chỉ hợp lệ trong khuyến mại tập trung hoặc ngoại lệ. Chạy scripts/kiem_khuyen_mai.py.")
 
     if a.bac_chiet_khau:
         d += ["", "### Giá đại lý theo bậc chiết khấu (trên giá bán lẻ khuyến nghị)", "",

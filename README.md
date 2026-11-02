@@ -3,7 +3,7 @@
 Bộ **17 skill** giúp Claude (và ChatGPT) làm việc như một phòng sales – marketing cho **doanh nghiệp, hộ kinh doanh Việt Nam**: bán **B2C và B2B**, **online lẫn offline** (sàn TMĐT, inbox, Zalo, website, đại lý, sales trực tiếp). Các skill tuân theo pháp luật hiện hành năm 2026:
 
 - **Quảng cáo:** Luật Quảng cáo sửa đổi 75/2025/QH15, NĐ 342/2025/NĐ-CP.
-- **Khuyến mại:** NĐ 81/2018/NĐ-CP sửa bởi NĐ 128/2024/NĐ-CP và NĐ 239/2026/NĐ-CP.
+- **Khuyến mại:** NĐ 81/2018/NĐ-CP sửa bởi NĐ 128/2024/NĐ-CP và NĐ 239/2026/NĐ-CP; trần giảm giá, giá trị quà tặng theo Thông tư 39/2025/TT-BCT.
 - **Thương mại điện tử:** Luật Thương mại điện tử 122/2025/QH15.
 - **Dữ liệu cá nhân:** Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15, NĐ 356/2025/NĐ-CP.
 - **Tin nhắn, cuộc gọi quảng cáo:** NĐ 91/2020/NĐ-CP.
@@ -49,7 +49,7 @@ Chuỗi dùng gợi ý: `ho-so-doanh-nghiep` → `gia-san-pham-khuyen-mai` → `
 | [`qua-tang/Pipeline_ban_hang_B2B.xlsx`](qua-tang/Pipeline_ban_hang_B2B.xlsx) | Quản lý cơ hội B2B: giai đoạn, giá trị trọng số, việc tiếp theo, đồng ý dữ liệu |
 | [`qua-tang/Pipeline_ban_hang_B2C.xlsx`](qua-tang/Pipeline_ban_hang_B2C.xlsx) | Theo dõi khách inbox, Zalo, điện thoại đến khi chốt đơn |
 | [`qua-tang/Quan_ly_dai_ly.xlsx`](qua-tang/Quan_ly_dai_ly.xlsx) | Phát triển và chăm sóc đại lý, điểm bán |
-| [`van-ban/`](van-ban/) | Toàn văn 10 văn bản pháp luật gốc (bản chữ) để đối chiếu hoặc nạp vào Claude/ChatGPT Project |
+| [`van-ban/`](van-ban/) | Toàn văn 12 văn bản pháp luật gốc (bản chữ) để đối chiếu hoặc nạp vào Claude/ChatGPT Project |
 
 ## Cài đặt
 
@@ -95,7 +95,7 @@ Sửa pháp lý hoặc nguyên tắc: sửa `shared/` → `python3 scripts/build
 ## Lưu ý pháp lý
 
 - Đây là công cụ hỗ trợ, **không phải tư vấn pháp lý, thuế**. Nhãn `[NGUYÊN VĂN]` nghĩa là đã đối chiếu bản chữ trong `van-ban/` (lấy từ cổng tra cứu, chưa so Công báo); `[THỨ CẤP]` lấy từ bản tin công ty luật/kiểm toán; `[CẦN KIỂM TRA]` chưa xác minh.
-- **NĐ 239/2026/NĐ-CP** (khuyến mại, hiệu lực 26/06/2026) chưa có toàn văn trong repo — đang dùng bản tin KPMG, PwC.
+- Trần giảm giá 50% / giá trị quà tặng 50% nay quy định tại **Thông tư 39/2025/TT-BCT** (NĐ 239/2026 đã bãi bỏ Điều 6, 7 NĐ 81/2018). Toàn văn cả hai văn bản có trong `van-ban/` (lấy từ vbpl.vn).
 - Biểu phí sàn, chính sách quảng cáo nền tảng, mẫu Zalo ZNS thay đổi thường xuyên: skill luôn yêu cầu kiểm tra mới nhất và ghi ngày.
 - Đối chiếu văn bản hiện hành và hỏi luật sư/cơ quan quản lý trước khi áp dụng.
 

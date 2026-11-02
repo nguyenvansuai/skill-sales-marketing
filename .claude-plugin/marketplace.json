@@ -21,7 +21,7 @@
     {
       "name": "gia-san-pham-khuyen-mai",
       "source": "./skills/gia-san-pham-khuyen-mai",
-      "description": "Tính giá và thiết kế khuyến mại cho doanh nghiệp, hộ kinh doanh Việt Nam — P&L từng đơn sau phí sàn (Shopee, TikTok Shop, Lazada), phí ship, COD, hoàn đơn, chi phí quảng cáo; giá hòa vốn, ROAS và CPA hòa vốn, mức giảm tối đa còn lãi; giá đại lý theo bậc chiết khấu; kiểm khuyến mại theo NĐ 81/2018 sửa bởi NĐ 128/2024 và NĐ 239/2026 (trần giảm 50%, khuyến mại tập trung, hàng cấm khuyến mại, khi nào phải thông báo/đăng ký). Dùng khi người dùng nói \"bán giá này có lời không\", \"tính giá bán\", \"giảm 30% còn lãi không\", \"ROAS bao nhiêu thì hòa vốn\", \"phí sàn ăn hết lời\", \"làm chương trình khuyến mại\", \"giảm 70% được không\", \"chiết khấu đại lý bao nhiêu\".",
+      "description": "Tính giá và thiết kế khuyến mại cho doanh nghiệp, hộ kinh doanh Việt Nam — P&L từng đơn sau phí sàn (Shopee, TikTok Shop, Lazada), phí ship, COD, hoàn đơn, chi phí quảng cáo; giá hòa vốn, ROAS và CPA hòa vốn, mức giảm tối đa còn lãi; giá đại lý theo bậc chiết khấu; kiểm khuyến mại theo NĐ 81/2018 sửa bởi NĐ 239/2026 và Thông tư 39/2025/TT-BCT (trần giảm 50%, khuyến mại tập trung, hàng cấm khuyến mại, khi nào phải thông báo/đăng ký). Dùng khi người dùng nói \"bán giá này có lời không\", \"tính giá bán\", \"giảm 30% còn lãi không\", \"ROAS bao nhiêu thì hòa vốn\", \"phí sàn ăn hết lời\", \"làm chương trình khuyến mại\", \"giảm 70% được không\", \"chiết khấu đại lý bao nhiêu\".",
       "category": "sales-marketing"
     },
     {

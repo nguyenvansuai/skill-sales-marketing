@@ -24,7 +24,7 @@ RULE_DOCS = {
     "TP002": "quảng cáo TPBVSK thiếu câu khuyến cáo 'không phải là thuốc…' (NĐ 342/2025 Đ5)",
     "TP003": "quảng cáo thực phẩm bổ sung thiếu cụm từ 'Thực phẩm bổ sung' (NĐ 342/2025 Đ5)",
     "MP001": "quảng cáo mỹ phẩm/thực phẩm chưa thấy tên, địa chỉ tổ chức chịu trách nhiệm (NĐ 342/2025 Đ4, Đ5)",
-    "KM001": "mức giảm giá trên 50% (Điều 7 NĐ 81/2018 sau NĐ 128/2024) — chỉ hợp lệ khi khuyến mại tập trung/ngoại lệ",
+    "KM001": "mức giảm giá trên 50% (khoản 1 Điều 4 TT 39/2025/TT-BCT) — chỉ hợp lệ khi khuyến mại tập trung/ngoại lệ",
     "SS001": "quảng cáo so sánh — cần tài liệu hợp pháp chứng minh (khoản 10 Điều 8 Luật QC, sửa 2025)",
     "KOL001": "nội dung KOL/KOC/tài trợ không có dấu hiệu nhận biết là quảng cáo (Điều 15a, khoản 2 Điều 23 Luật QC sửa 2025)",
     "KOL002": "nội dung KOL/KOC tự nhận 'không phải quảng cáo' trong khi có hợp tác (Điều 15a Luật QC sửa 2025)",
