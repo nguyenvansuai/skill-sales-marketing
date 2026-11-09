@@ -49,3 +49,14 @@ Văn bản quảng cáo vừa thay đổi lớn (Luật 75/2025 từ 01/01/2026,
 - Kết luận "hợp pháp 100%", "không thể bị phạt".
 - Gợi ý lách luật (viết tắt, đọc lái, dùng ký hiệu thay từ "nhất", "KOC nói như không phải quảng cáo").
 - Nêu mức phạt cụ thể khi chưa đối chiếu nghị định xử phạt.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Canva**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Mở nội dung cần soát (kịch bản, bài đăng, file thiết kế) từ Drive hoặc thiết kế Canva người dùng chỉ.
+2. Lưu báo cáo soát và bản sửa thành file mới; không sửa thẳng thiết kế gốc.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

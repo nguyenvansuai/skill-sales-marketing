@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `koc-affiliate-doi-tac`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/koc-affiliate-doi-tac/references/khung-hop-tac.md`, `skills/koc-affiliate-doi-tac/references/nguyen-tac-chung.md`, `skills/koc-affiliate-doi-tac/references/phap-ly-marketing-vn.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/koc-affiliate-doi-tac/references/ket-noi.md`, `skills/koc-affiliate-doi-tac/references/khung-hop-tac.md`, `skills/koc-affiliate-doi-tac/references/nguyen-tac-chung.md`, `skills/koc-affiliate-doi-tac/references/phap-ly-marketing-vn.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/koc-affiliate-doi-tac/scripts/tinh_koc.py`, `skills/koc-affiliate-doi-tac/scripts/vn_money.py`.
 
 ## Instructions
@@ -57,4 +57,15 @@ Chính sách affiliate/creator của TikTok Shop, Shopee; quy chế livestream; 
 - Viết brief yêu cầu KOC giấu việc được trả tiền hoặc khen sản phẩm chưa dùng.
 - Mua lượt xem, lượt theo dõi, đánh giá giả cho KOC.
 - Ghi cứng tỷ lệ khấu trừ thuế khi chưa đối chiếu văn bản hiện hành.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail** · **Google Drive** · **HubSpot CRM (ChatGPT chưa có connector này)**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Tạo nháp email mời hợp tác, gửi brief, thỏa thuận cho từng KOL/KOC.
+2. Lưu danh sách đối tác, hợp đồng, bảng đo hiệu quả trên Drive; có HubSpot thì ghi đối tác thành công ty/liên hệ.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

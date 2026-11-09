@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `cham-soc-giu-chan-khach`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/cham-soc-giu-chan-khach/references/khung-giu-chan.md`, `skills/cham-soc-giu-chan-khach/references/nguyen-tac-chung.md`, `skills/cham-soc-giu-chan-khach/references/phap-ly-marketing-vn.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/cham-soc-giu-chan-khach/references/ket-noi.md`, `skills/cham-soc-giu-chan-khach/references/khung-giu-chan.md`, `skills/cham-soc-giu-chan-khach/references/nguyen-tac-chung.md`, `skills/cham-soc-giu-chan-khach/references/phap-ly-marketing-vn.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/cham-soc-giu-chan-khach/scripts/rfm.py`, `skills/cham-soc-giu-chan-khach/scripts/vn_money.py`.
 
 ## Instructions
@@ -57,4 +57,16 @@ Loại tin Zalo (ZNS chăm sóc/giao dịch, tin truyền thông OA), giới h�
 - Gửi tin cho người chưa đồng ý, gửi ngoài khung giờ, gửi dồn.
 - Đổi quà lấy đánh giá 5 sao, xóa/ẩn đánh giá xấu trái quy chế nền tảng.
 - Gửi tin, cài chiến dịch thay người dùng.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Shopify** · **HubSpot CRM (ChatGPT chưa có connector này)** · **Gmail** · **Google Drive**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Lấy lịch sử mua từ Shopify hoặc HubSpot để chia nhóm RFM, tìm khách lâu không mua.
+2. Tạo nháp email chăm sóc, nhắc mua lại cho nhóm khách đã đồng ý nhận tin; gửi hàng loạt dùng công cụ email marketing có nút hủy đăng ký.
+3. Lưu kết quả chia nhóm, kịch bản chăm sóc vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

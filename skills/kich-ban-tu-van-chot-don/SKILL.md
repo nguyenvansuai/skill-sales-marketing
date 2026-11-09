@@ -44,3 +44,14 @@ Chính sách giá, khuyến mại, tồn kho, phí ship đang áp dụng → l�
 - Viết câu nói sai sự thật: "chỉ còn 2 suất" khi không đúng, "giá này hôm nay thôi" khi không có hạn.
 - Tư vấn sức khỏe như bác sĩ; hứa kết quả 100%.
 - Kịch bản nói xấu đối thủ nêu tên; ép khách, gọi dồn dập (NĐ 91/2020: ≤ 1 cuộc gọi quảng cáo/24 giờ trừ khi khách thỏa thuận khác).
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Notion** · **Gmail**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Đọc tin nhắn, email khách hỏi thường gặp (file xuất, hộp thư) để viết kịch bản sát câu hỏi thật.
+2. Lưu bộ kịch bản vào Notion hoặc Docs trên Drive cho cả đội dùng chung.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

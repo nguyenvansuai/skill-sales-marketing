@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `quan-ly-doi-sales`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/quan-ly-doi-sales/references/khung-doi-sales.md`, `skills/quan-ly-doi-sales/references/nguyen-tac-chung.md`, `skills/quan-ly-doi-sales/references/phap-ly-marketing-vn.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/quan-ly-doi-sales/references/ket-noi.md`, `skills/quan-ly-doi-sales/references/khung-doi-sales.md`, `skills/quan-ly-doi-sales/references/nguyen-tac-chung.md`, `skills/quan-ly-doi-sales/references/phap-ly-marketing-vn.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/quan-ly-doi-sales/scripts/hoa_hong_du_bao.py`, `skills/quan-ly-doi-sales/scripts/vn_money.py`.
 
 ## Instructions
@@ -55,4 +55,15 @@ Hoa hồng có thể là một phần tiền lương (Bộ luật Lao động 20
 - Đánh giá con người bằng nhận xét cá nhân không dựa trên số liệu/hành vi quan sát được.
 - Đề xuất cơ chế phạt trừ lương trái luật `[CẦN KIỂM TRA]`; hoa hồng tính trên đơn chưa thu tiền.
 - Chia sẻ bảng hoa hồng có thông tin cá nhân ra ngoài người có thẩm quyền.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **HubSpot CRM (ChatGPT chưa có connector này)** · **Google Drive** · **Google Calendar**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Lấy số liệu hoạt động và kết quả theo từng người từ HubSpot (cuộc gọi, cuộc hẹn, deal thắng) để tính KPI, hoa hồng.
+2. Lưu bảng chỉ tiêu, bảng hoa hồng vào Drive; tạo lịch họp sales tuần, 1-1 (sau khi xác nhận).
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

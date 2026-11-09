@@ -43,3 +43,15 @@ Lịch sự kiện sàn (ngày đôi, mega sale) đổi theo năm → kiểm tra
 - Dùng tỷ lệ chuyển đổi, CPL, ROAS "trung bình ngành" không nguồn.
 - Đặt mục tiêu ROAS thấp hơn ROAS hòa vốn mà không cảnh báo.
 - Chi tiết hóa từng nhóm quảng cáo (việc của `quang-cao-truc-tuyen`).
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Shopify** · **HubSpot CRM (ChatGPT chưa có connector này)** · **TikTok Ads (ChatGPT chưa có connector này)** · **Google Calendar**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Lấy số liệu kỳ trước (doanh thu Shopify, pipeline HubSpot, chi phí và chuyển đổi TikTok Ads) làm cơ sở tính ngược.
+2. Lưu kế hoạch, bảng ngân sách (Sheets) vào Drive.
+3. Tạo lịch các mốc chiến dịch, buổi rà soát KPI hằng tuần (sau khi xác nhận).
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

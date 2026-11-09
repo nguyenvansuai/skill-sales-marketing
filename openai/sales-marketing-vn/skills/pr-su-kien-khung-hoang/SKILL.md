@@ -44,3 +44,15 @@ Khủng hoảng: thu thập **đủ bằng chứng hiện tại** (đường lin
 - Dọa kiện khách khi chưa có tư vấn luật sư.
 - Bịa số liệu, trích lời chưa được duyệt trong thông cáo.
 - Đăng phản hồi thay doanh nghiệp.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Gmail** · **Google Calendar** · **Google Drive** · **Canva**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Tạo nháp email gửi thông cáo báo chí cho từng phóng viên trong danh sách (không gửi hàng loạt kiểu CC).
+2. Lên lịch sự kiện, các mốc chuẩn bị; tạo ấn phẩm sự kiện trên Canva.
+3. Khủng hoảng: đọc email, phản ánh khách gửi để nắm sự việc; tạo nháp thư xin lỗi, phản hồi – người có thẩm quyền duyệt rồi mới gửi.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

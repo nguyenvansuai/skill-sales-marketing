@@ -44,3 +44,15 @@ Quy định nền tảng (độ dài caption, định dạng, chính sách nội
 - Viết "số 1, tốt nhất, duy nhất" không có bằng chứng; viết mỹ phẩm/thực phẩm như thuốc.
 - Bịa đánh giá, lời khách hàng, số người đã mua.
 - Viết kịch bản để KOC "nói tự nhiên như không phải quảng cáo".
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Canva** · **Notion** · **Google Drive** · **Google Calendar**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Lưu lịch nội dung tháng vào Notion (cơ sở dữ liệu bài đăng) hoặc Sheets trên Drive.
+2. Bài đã duyệt pháp lý: tạo thiết kế trên Canva đúng kích thước từng kênh, trả link để chỉnh.
+3. Tạo nhắc lịch đăng bài trên lịch người phụ trách (sau khi xác nhận) – không tự đăng.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

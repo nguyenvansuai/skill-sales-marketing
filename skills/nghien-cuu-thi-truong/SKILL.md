@@ -44,3 +44,14 @@ Có công cụ tìm kiếm → xem trang, gian hàng, fanpage đối thủ tại
 - Bịa quy mô thị trường, thị phần, "70% khách hàng Việt…" không có nguồn.
 - Tạo chân dung khách hàng từ tưởng tượng khi chưa có dữ liệu (trường hợp B).
 - Đề xuất so sánh nêu tên đối thủ trong quảng cáo khi không có tài liệu chứng minh.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Gmail** · **HubSpot CRM (ChatGPT chưa có connector này)** · **Shopify**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Lấy dữ liệu thật: file đánh giá, bình luận, khảo sát trên Drive; email khách phản hồi; ghi chú cuộc gọi trong HubSpot; đơn hàng và khách hàng trong Shopify.
+2. Lưu báo cáo chân dung khách, bảng so sánh đối thủ vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `kiem-tra-phap-ly-quang-cao`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/kiem-tra-phap-ly-quang-cao/references/banned-phrases.md`, `skills/kiem-tra-phap-ly-quang-cao/references/checklist-duyet.md`, `skills/kiem-tra-phap-ly-quang-cao/references/glossary.md`, `skills/kiem-tra-phap-ly-quang-cao/references/nguyen-tac-chung.md`, `skills/kiem-tra-phap-ly-quang-cao/references/phap-ly-marketing-vn.md`, `skills/kiem-tra-phap-ly-quang-cao/references/register-matrix.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/kiem-tra-phap-ly-quang-cao/references/banned-phrases.md`, `skills/kiem-tra-phap-ly-quang-cao/references/checklist-duyet.md`, `skills/kiem-tra-phap-ly-quang-cao/references/glossary.md`, `skills/kiem-tra-phap-ly-quang-cao/references/ket-noi.md`, `skills/kiem-tra-phap-ly-quang-cao/references/nguyen-tac-chung.md`, `skills/kiem-tra-phap-ly-quang-cao/references/phap-ly-marketing-vn.md`, `skills/kiem-tra-phap-ly-quang-cao/references/register-matrix.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/kiem-tra-phap-ly-quang-cao/scripts/rules_quangcao.py`, `skills/kiem-tra-phap-ly-quang-cao/scripts/validate_copy.py`, `skills/kiem-tra-phap-ly-quang-cao/scripts/vn_money.py`.
 
 ## Instructions
@@ -61,4 +61,15 @@ Văn bản quảng cáo vừa thay đổi lớn (Luật 75/2025 từ 01/01/2026,
 - Kết luận "hợp pháp 100%", "không thể bị phạt".
 - Gợi ý lách luật (viết tắt, đọc lái, dùng ký hiệu thay từ "nhất", "KOC nói như không phải quảng cáo").
 - Nêu mức phạt cụ thể khi chưa đối chiếu nghị định xử phạt.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Canva**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Mở nội dung cần soát (kịch bản, bài đăng, file thiết kế) từ Drive hoặc thiết kế Canva người dùng chỉ.
+2. Lưu báo cáo soát và bản sửa thành file mới; không sửa thẳng thiết kế gốc.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

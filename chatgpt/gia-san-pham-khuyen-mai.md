@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `gia-san-pham-khuyen-mai`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/gia-san-pham-khuyen-mai/references/nguyen-tac-chung.md`, `skills/gia-san-pham-khuyen-mai/references/phap-ly-marketing-vn.md`, `skills/gia-san-pham-khuyen-mai/references/phi-kenh-ban.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/gia-san-pham-khuyen-mai/references/ket-noi.md`, `skills/gia-san-pham-khuyen-mai/references/nguyen-tac-chung.md`, `skills/gia-san-pham-khuyen-mai/references/phap-ly-marketing-vn.md`, `skills/gia-san-pham-khuyen-mai/references/phi-kenh-ban.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/gia-san-pham-khuyen-mai/scripts/kiem_khuyen_mai.py`, `skills/gia-san-pham-khuyen-mai/scripts/tinh_gia.py`, `skills/gia-san-pham-khuyen-mai/scripts/vn_money.py`.
 
 ## Instructions
@@ -59,4 +59,15 @@ Có công cụ tìm kiếm → tìm "biểu phí người bán [sàn] [tháng/n�
 - Ghi cứng tỷ lệ phí của bất kỳ sàn nào như sự thật.
 - Đề xuất giảm giá > 50% ngoài khuyến mại tập trung/ngoại lệ; đề xuất giá gốc ảo.
 - Cài giá, bật voucher, đăng ký chương trình thay người dùng.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Shopify** · **Google Drive**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Lấy giá bán, giá vốn, phí vận chuyển, tỷ lệ hoàn đơn từ Shopify hoặc bảng giá trên Drive để tính P&L từng đơn.
+2. Tạo mã giảm giá trên Shopify chỉ sau khi chương trình đã qua kiểm tra luật khuyến mại và người dùng xác nhận.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

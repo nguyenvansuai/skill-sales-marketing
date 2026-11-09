@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `bao-cao-doi-soat-hieu-qua`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/bao-cao-doi-soat-hieu-qua/references/khung-doi-soat.md`, `skills/bao-cao-doi-soat-hieu-qua/references/nguyen-tac-chung.md`, `skills/bao-cao-doi-soat-hieu-qua/references/phap-ly-marketing-vn.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/bao-cao-doi-soat-hieu-qua/references/ket-noi.md`, `skills/bao-cao-doi-soat-hieu-qua/references/khung-doi-soat.md`, `skills/bao-cao-doi-soat-hieu-qua/references/nguyen-tac-chung.md`, `skills/bao-cao-doi-soat-hieu-qua/references/phap-ly-marketing-vn.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/bao-cao-doi-soat-hieu-qua/scripts/doi_soat.py`, `skills/bao-cao-doi-soat-hieu-qua/scripts/vn_money.py`.
 
 ## Instructions
@@ -61,4 +61,15 @@ Khác `ke-hoach-ngan-sach-kpi` (lập kế hoạch **trước** kỳ) và `quang
 - Cộng tiền sao kê vào doanh thu; cộng một đơn hai lần.
 - Lấy số "chuyển đổi" của nền tảng làm doanh thu thật khi có dữ liệu đơn.
 - Ngoại suy từ dữ liệu một phần; tự phân bổ doanh thu chưa gắn chiến dịch.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Shopify** · **TikTok Ads (ChatGPT chưa có connector này)** · **HubSpot CRM (ChatGPT chưa có connector này)** · **Google Drive** · **Gmail**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Lấy đơn thật từ Shopify, chi phí quảng cáo từ TikTok Ads, pipeline từ HubSpot; báo cáo sàn, Meta, sao kê từ file trên Drive.
+2. Lưu báo cáo đối soát (Sheets) vào Drive; tạo nháp email gửi báo cáo cho sếp.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

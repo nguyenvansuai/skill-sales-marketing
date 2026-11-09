@@ -27,3 +27,7 @@ Bộ 17 skill làm việc như một phòng sales – marketing cho doanh nghi�
 ## Cài đặt
 
 Xem README ở gốc repo, mục **ChatGPT / Codex**.
+
+## Connector khai báo sẵn (`.app.json`)
+
+Khi cài plugin, ChatGPT đề nghị kết nối các ứng dụng: `gmail`, `google-calendar`, `google-drive`, `canva`, `shopify`, `notion`. Mỗi người đăng nhập một lần bằng tài khoản của mình. Chưa kết nối thì skill vẫn chạy, chỉ không tự lấy dữ liệu hoặc tạo nháp được.

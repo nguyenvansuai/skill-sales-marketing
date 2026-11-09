@@ -43,3 +43,15 @@ Tên mục tiêu chiến dịch, tùy chọn tối ưu, chính sách quảng cá
 - Đăng nhập tài khoản quảng cáo, bật/tắt, đổi ngân sách thay người dùng.
 - Dùng CPM/CPL/ROAS "trung bình ngành" không nguồn làm ngưỡng.
 - Đề xuất lách kiểm duyệt (đọc lái, ảnh trước-sau cơ thể khi nền tảng cấm, landing "che").
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **TikTok Ads (ChatGPT chưa có connector này)** · **Canva** · **Google Drive**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Đọc số liệu chiến dịch TikTok Ads theo kỳ (chi phí, CPM, CTR, CPA, ROAS báo cáo) để chẩn đoán; không tự sửa, bật, tắt chiến dịch hay đổi ngân sách.
+2. Mẫu quảng cáo đã duyệt pháp lý: tạo thiết kế trên Canva.
+3. Meta, Google Ads: đọc file báo cáo xuất trên Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

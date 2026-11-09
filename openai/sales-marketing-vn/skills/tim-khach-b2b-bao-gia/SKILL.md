@@ -43,3 +43,15 @@ Thuế suất GTGT (chính sách giảm 2% còn 8% đến hết 2026, danh mục
 - Mua/cào danh sách SĐT, email cá nhân; gửi hàng loạt cho người chưa đồng ý.
 - Tự điền thuế suất, tự hứa chiết khấu ngoài chính sách.
 - Gửi thư, gọi điện thay người dùng; dùng tên khách cũ làm bằng chứng khi chưa được phép.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **HubSpot CRM (ChatGPT chưa có connector này)** · **Gmail** · **Google Drive** · **Google Calendar**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Kiểm tra khách tiềm năng đã có trong HubSpot chưa trước khi liên hệ; thêm liên hệ mới (sau khi xác nhận nguồn hợp pháp).
+2. Tạo nháp email chào hàng, gửi báo giá kèm file báo giá lưu trên Drive.
+3. Tạo lịch hẹn gặp, demo, nhắc theo dõi báo giá sau 3 và 7 ngày làm việc.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

@@ -51,9 +51,22 @@ Chuỗi dùng gợi ý: `ho-so-doanh-nghiep` → `gia-san-pham-khuyen-mai` → `
 | [`qua-tang/Quan_ly_dai_ly.xlsx`](qua-tang/Quan_ly_dai_ly.xlsx) | Phát triển và chăm sóc đại lý, điểm bán |
 | [`van-ban/`](van-ban/) | Toàn văn 12 văn bản pháp luật gốc (bản chữ) để đối chiếu hoặc nạp vào Claude/ChatGPT Project |
 
+## Connector
+
+<!-- KET-NOI-README:BAT-DAU (sinh tự động bởi scripts/ket_noi.py) -->
+Plugin **khai báo sẵn** connector: Gmail, Google Calendar, Google Drive, Canva, Shopify, HubSpot CRM (ChatGPT chưa có connector này), TikTok Ads (ChatGPT chưa có connector này), Notion. Cài plugin xong chỉ cần bấm kết nối và đăng nhập một lần (tab **Connectors** của plugin). Mỗi skill ghi rõ dùng connector vào việc gì; chưa kết nối thì skill vẫn chạy, chỉ không tự lấy dữ liệu hoặc tạo nháp được. Email chỉ tạo bản nháp, mọi thao tác ghi phải được bạn xác nhận. Chi tiết: [CONNECTORS.md](CONNECTORS.md).
+<!-- KET-NOI-README:KET-THUC -->
+
+Ví dụ việc skill làm qua connector: đọc đơn và sản phẩm Shopify để tính giá, đối soát; đọc số liệu TikTok Ads; tạo ấn phẩm trên Canva từ nội dung đã duyệt pháp lý; tạo nháp email chào hàng, báo giá; lưu lịch nội dung vào Notion; tra pipeline HubSpot.
+
 ## Cài đặt
 
+### Claude Desktop / Cowork – cả bộ plugin (có connector)
+Tải [`dist/tron-bo-skill-sales-marketing.plugin`](dist/) và cài plugin từ file (gồm toàn bộ skill và connector khai báo sẵn), rồi mở tab **Connectors** của plugin để kết nối. Khác với `tat-ca-skill.zip` (chỉ là các skill rời, không có connector).
+
 ### claude.ai (web, desktop, điện thoại)
+> Skill tải lên từng file zip không tự khai báo connector: bật Gmail, Google Drive, Google Calendar (và các dịch vụ khác ở mục Connector) trong **Settings → Connectors** để skill tự lấy dữ liệu, tạo nháp được.
+
 1. Vào [`dist/`](dist/), tải `<ten-skill>.zip` (hoặc `tat-ca-skill.zip` rồi giải nén lấy từng thư mục).
 2. Claude → **Customize → Skills → + Create skill → Upload a skill** → chọn file zip.
 3. Chỉ cài skill thật sự cần; nên cài `ho-so-doanh-nghiep` trước.

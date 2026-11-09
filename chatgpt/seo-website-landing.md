@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `seo-website-landing`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/seo-website-landing/references/checklist-seo-landing.md`, `skills/seo-website-landing/references/nguyen-tac-chung.md`, `skills/seo-website-landing/references/phap-ly-marketing-vn.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/seo-website-landing/references/checklist-seo-landing.md`, `skills/seo-website-landing/references/ket-noi.md`, `skills/seo-website-landing/references/nguyen-tac-chung.md`, `skills/seo-website-landing/references/phap-ly-marketing-vn.md`.
 
 ## Instructions
 
@@ -53,4 +53,15 @@ Hướng dẫn của Google (Search Central), yêu cầu Google Business Profile
 - Cam kết "lên top 1 trong X ngày".
 - Đề xuất mua backlink, nhồi từ khóa, trang ẩn, đánh giá giả trên Google Maps.
 - Sửa website trực tiếp khi chưa được yêu cầu.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Shopify**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Shopify: đọc tiêu đề, mô tả sản phẩm, trang để rà SEO; sửa nội dung trang chỉ sau khi xác nhận.
+2. Lưu bảng từ khóa, đề xuất sửa từng trang vào Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

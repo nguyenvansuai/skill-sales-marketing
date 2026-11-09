@@ -1,0 +1,20 @@
+{
+  "name": "tron-bo-skill-sales-marketing",
+  "version": "1.0.0",
+  "description": "Bộ 17 skill Sales – Marketing cho doanh nghiệp, hộ kinh doanh Việt Nam theo luật 2026: hồ sơ doanh nghiệp, nghiên cứu thị trường, giá – khuyến mại, KPI – ngân sách, nội dung, kiểm tra pháp lý quảng cáo, PR, quảng cáo trực tuyến, SEO, trade marketing, KOC – affiliate, CRM, báo giá B2B, kịch bản tư vấn, quản lý đội sales, giữ chân khách, đối soát hiệu quả. Khai báo sẵn connector Gmail, Google Calendar, Google Drive, Canva, Shopify, HubSpot, TikTok Ads, Notion.",
+  "author": {
+    "name": "nguyenvansuai",
+    "url": "https://github.com/nguyenvansuai"
+  },
+  "homepage": "https://github.com/nguyenvansuai/skill-sales-marketing",
+  "repository": "https://github.com/nguyenvansuai/skill-sales-marketing",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "marketing",
+    "quang-cao",
+    "crm",
+    "viet-nam"
+  ],
+  "privacyPolicyUrl": "https://github.com/nguyenvansuai/skill-sales-marketing/blob/main/PRIVACY.md"
+}

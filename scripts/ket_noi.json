@@ -1,0 +1,143 @@
+{
+  "connectors": ["gmail", "google-calendar", "google-drive", "canva", "shopify", "hubspot", "tiktok-ads", "notion"],
+  "chung": [
+    "**Nội dung quảng cáo phải qua kiểm tra pháp lý trước khi đưa lên Canva, đặt lịch đăng hoặc gửi khách**: dùng skill `kiem-tra-phap-ly-quang-cao`; ngành có điều kiện (mỹ phẩm, thực phẩm chức năng, thiết bị y tế...) phải có giấy xác nhận nội dung trước.",
+    "**Email, tin nhắn hàng loạt chỉ gửi cho khách đã đồng ý nhận** (NĐ 91/2020, Luật 91/2025): tạo nháp hoặc danh sách để người dùng tự gửi qua công cụ có chức năng hủy đăng ký; không lấy danh sách khách từ nguồn không rõ.",
+    "**Số liệu nền tảng tự báo (Shopify, TikTok Ads, HubSpot) là số tham khảo**: luôn đối chiếu với đơn thật, tiền thật trước khi kết luận hiệu quả."
+  ],
+  "chua_co": [
+    "Shopee, TikTok Shop, Lazada: chưa có connector chính thức; tải báo cáo đơn hàng, báo cáo thanh toán (Excel/CSV) rồi đưa vào chat.",
+    "Meta Ads (Facebook/Instagram), Google Ads, Zalo Ads: chưa khai báo sẵn; xuất báo cáo CSV từ trình quản lý quảng cáo.",
+    "Zalo OA / ZNS, Facebook Messenger: chưa có connector chính thức; tự dựng qua n8n, Make hoặc Zapier nếu cần tự động.",
+    "HubSpot và TikTok Ads hiện chỉ có connector trên Claude; trên ChatGPT dùng file xuất."
+  ],
+  "skills": {
+    "ho-so-doanh-nghiep": {
+      "dung": ["google-drive", "notion", "shopify"],
+      "viec": [
+        "Đọc catalogue, bảng giá, giới thiệu công ty trên Drive hoặc Notion để điền hồ sơ, không hỏi lại thông tin đã có.",
+        "Có Shopify: lấy danh sách sản phẩm, giá bán, tồn kho hiện hành.",
+        "Lưu hồ sơ doanh nghiệp thành một trang Notion hoặc file Docs trên Drive để các skill khác dùng lại."
+      ]
+    },
+    "nghien-cuu-thi-truong": {
+      "dung": ["google-drive", "gmail", "hubspot", "shopify"],
+      "viec": [
+        "Lấy dữ liệu thật: file đánh giá, bình luận, khảo sát trên Drive; email khách phản hồi; ghi chú cuộc gọi trong HubSpot; đơn hàng và khách hàng trong Shopify.",
+        "Lưu báo cáo chân dung khách, bảng so sánh đối thủ vào Drive."
+      ]
+    },
+    "gia-san-pham-khuyen-mai": {
+      "dung": ["shopify", "google-drive"],
+      "viec": [
+        "Lấy giá bán, giá vốn, phí vận chuyển, tỷ lệ hoàn đơn từ Shopify hoặc bảng giá trên Drive để tính P&L từng đơn.",
+        "Tạo mã giảm giá trên Shopify chỉ sau khi chương trình đã qua kiểm tra luật khuyến mại và người dùng xác nhận."
+      ]
+    },
+    "ke-hoach-ngan-sach-kpi": {
+      "dung": ["google-drive", "shopify", "hubspot", "tiktok-ads", "google-calendar"],
+      "viec": [
+        "Lấy số liệu kỳ trước (doanh thu Shopify, pipeline HubSpot, chi phí và chuyển đổi TikTok Ads) làm cơ sở tính ngược.",
+        "Lưu kế hoạch, bảng ngân sách (Sheets) vào Drive.",
+        "Tạo lịch các mốc chiến dịch, buổi rà soát KPI hằng tuần (sau khi xác nhận)."
+      ]
+    },
+    "thuong-hieu-noi-dung": {
+      "dung": ["canva", "notion", "google-drive", "google-calendar"],
+      "viec": [
+        "Lưu lịch nội dung tháng vào Notion (cơ sở dữ liệu bài đăng) hoặc Sheets trên Drive.",
+        "Bài đã duyệt pháp lý: tạo thiết kế trên Canva đúng kích thước từng kênh, trả link để chỉnh.",
+        "Tạo nhắc lịch đăng bài trên lịch người phụ trách (sau khi xác nhận) – không tự đăng."
+      ]
+    },
+    "kiem-tra-phap-ly-quang-cao": {
+      "dung": ["google-drive", "canva"],
+      "viec": [
+        "Mở nội dung cần soát (kịch bản, bài đăng, file thiết kế) từ Drive hoặc thiết kế Canva người dùng chỉ.",
+        "Lưu báo cáo soát và bản sửa thành file mới; không sửa thẳng thiết kế gốc."
+      ]
+    },
+    "pr-su-kien-khung-hoang": {
+      "dung": ["gmail", "google-calendar", "google-drive", "canva"],
+      "viec": [
+        "Tạo nháp email gửi thông cáo báo chí cho từng phóng viên trong danh sách (không gửi hàng loạt kiểu CC).",
+        "Lên lịch sự kiện, các mốc chuẩn bị; tạo ấn phẩm sự kiện trên Canva.",
+        "Khủng hoảng: đọc email, phản ánh khách gửi để nắm sự việc; tạo nháp thư xin lỗi, phản hồi – người có thẩm quyền duyệt rồi mới gửi."
+      ]
+    },
+    "quang-cao-truc-tuyen": {
+      "dung": ["tiktok-ads", "canva", "google-drive"],
+      "viec": [
+        "Đọc số liệu chiến dịch TikTok Ads theo kỳ (chi phí, CPM, CTR, CPA, ROAS báo cáo) để chẩn đoán; không tự sửa, bật, tắt chiến dịch hay đổi ngân sách.",
+        "Mẫu quảng cáo đã duyệt pháp lý: tạo thiết kế trên Canva.",
+        "Meta, Google Ads: đọc file báo cáo xuất trên Drive."
+      ]
+    },
+    "seo-website-landing": {
+      "dung": ["google-drive", "shopify"],
+      "viec": [
+        "Shopify: đọc tiêu đề, mô tả sản phẩm, trang để rà SEO; sửa nội dung trang chỉ sau khi xác nhận.",
+        "Lưu bảng từ khóa, đề xuất sửa từng trang vào Drive."
+      ]
+    },
+    "trade-marketing-diem-ban": {
+      "dung": ["google-drive", "canva", "google-calendar"],
+      "viec": [
+        "Đọc báo cáo bán hàng theo điểm bán, ảnh trưng bày trên Drive để chấm điểm, đo hiệu quả chương trình.",
+        "Tạo POSM (poster, wobbler, standee) trên Canva; lên lịch đi thị trường, kiểm tra trưng bày."
+      ]
+    },
+    "koc-affiliate-doi-tac": {
+      "dung": ["gmail", "google-drive", "hubspot"],
+      "viec": [
+        "Tạo nháp email mời hợp tác, gửi brief, thỏa thuận cho từng KOL/KOC.",
+        "Lưu danh sách đối tác, hợp đồng, bảng đo hiệu quả trên Drive; có HubSpot thì ghi đối tác thành công ty/liên hệ."
+      ]
+    },
+    "quy-trinh-ban-hang-crm": {
+      "dung": ["hubspot", "notion", "google-drive"],
+      "viec": [
+        "Đọc cấu hình pipeline hiện có trong HubSpot (giai đoạn, thuộc tính) để đề xuất quy trình sát thực tế.",
+        "Báo cáo deal tồn đọng, deal không có hoạt động tiếp theo; cập nhật giai đoạn deal chỉ sau khi xác nhận.",
+        "Không dùng HubSpot: dựng CRM đơn giản bằng cơ sở dữ liệu Notion hoặc Sheets trên Drive."
+      ]
+    },
+    "tim-khach-b2b-bao-gia": {
+      "dung": ["hubspot", "gmail", "google-drive", "google-calendar"],
+      "viec": [
+        "Kiểm tra khách tiềm năng đã có trong HubSpot chưa trước khi liên hệ; thêm liên hệ mới (sau khi xác nhận nguồn hợp pháp).",
+        "Tạo nháp email chào hàng, gửi báo giá kèm file báo giá lưu trên Drive.",
+        "Tạo lịch hẹn gặp, demo, nhắc theo dõi báo giá sau 3 và 7 ngày làm việc."
+      ]
+    },
+    "kich-ban-tu-van-chot-don": {
+      "dung": ["google-drive", "notion", "gmail"],
+      "viec": [
+        "Đọc tin nhắn, email khách hỏi thường gặp (file xuất, hộp thư) để viết kịch bản sát câu hỏi thật.",
+        "Lưu bộ kịch bản vào Notion hoặc Docs trên Drive cho cả đội dùng chung."
+      ]
+    },
+    "quan-ly-doi-sales": {
+      "dung": ["hubspot", "google-drive", "google-calendar"],
+      "viec": [
+        "Lấy số liệu hoạt động và kết quả theo từng người từ HubSpot (cuộc gọi, cuộc hẹn, deal thắng) để tính KPI, hoa hồng.",
+        "Lưu bảng chỉ tiêu, bảng hoa hồng vào Drive; tạo lịch họp sales tuần, 1-1 (sau khi xác nhận)."
+      ]
+    },
+    "cham-soc-giu-chan-khach": {
+      "dung": ["shopify", "hubspot", "gmail", "google-drive"],
+      "viec": [
+        "Lấy lịch sử mua từ Shopify hoặc HubSpot để chia nhóm RFM, tìm khách lâu không mua.",
+        "Tạo nháp email chăm sóc, nhắc mua lại cho nhóm khách đã đồng ý nhận tin; gửi hàng loạt dùng công cụ email marketing có nút hủy đăng ký.",
+        "Lưu kết quả chia nhóm, kịch bản chăm sóc vào Drive."
+      ]
+    },
+    "bao-cao-doi-soat-hieu-qua": {
+      "dung": ["shopify", "tiktok-ads", "hubspot", "google-drive", "gmail"],
+      "viec": [
+        "Lấy đơn thật từ Shopify, chi phí quảng cáo từ TikTok Ads, pipeline từ HubSpot; báo cáo sàn, Meta, sao kê từ file trên Drive.",
+        "Lưu báo cáo đối soát (Sheets) vào Drive; tạo nháp email gửi báo cáo cho sếp."
+      ]
+    }
+  }
+}

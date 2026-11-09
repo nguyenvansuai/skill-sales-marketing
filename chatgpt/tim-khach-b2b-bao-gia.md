@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `tim-khach-b2b-bao-gia`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/tim-khach-b2b-bao-gia/references/khung-b2b.md`, `skills/tim-khach-b2b-bao-gia/references/nguyen-tac-chung.md`, `skills/tim-khach-b2b-bao-gia/references/phap-ly-marketing-vn.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/tim-khach-b2b-bao-gia/references/ket-noi.md`, `skills/tim-khach-b2b-bao-gia/references/khung-b2b.md`, `skills/tim-khach-b2b-bao-gia/references/nguyen-tac-chung.md`, `skills/tim-khach-b2b-bao-gia/references/phap-ly-marketing-vn.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/tim-khach-b2b-bao-gia/scripts/tao_bao_gia.py`, `skills/tim-khach-b2b-bao-gia/scripts/vn_money.py`.
 
 ## Instructions
@@ -55,4 +55,16 @@ Thuế suất GTGT (chính sách giảm 2% còn 8% đến hết 2026, danh mục
 - Mua/cào danh sách SĐT, email cá nhân; gửi hàng loạt cho người chưa đồng ý.
 - Tự điền thuế suất, tự hứa chiết khấu ngoài chính sách.
 - Gửi thư, gọi điện thay người dùng; dùng tên khách cũ làm bằng chứng khi chưa được phép.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **HubSpot CRM (ChatGPT chưa có connector này)** · **Gmail** · **Google Drive** · **Google Calendar**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Kiểm tra khách tiềm năng đã có trong HubSpot chưa trước khi liên hệ; thêm liên hệ mới (sau khi xác nhận nguồn hợp pháp).
+2. Tạo nháp email chào hàng, gửi báo giá kèm file báo giá lưu trên Drive.
+3. Tạo lịch hẹn gặp, demo, nhắc theo dõi báo giá sau 3 và 7 ngày làm việc.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

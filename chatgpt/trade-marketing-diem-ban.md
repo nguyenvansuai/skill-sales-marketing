@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `trade-marketing-diem-ban`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/trade-marketing-diem-ban/references/khung-trade.md`, `skills/trade-marketing-diem-ban/references/nguyen-tac-chung.md`, `skills/trade-marketing-diem-ban/references/phap-ly-marketing-vn.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/trade-marketing-diem-ban/references/ket-noi.md`, `skills/trade-marketing-diem-ban/references/khung-trade.md`, `skills/trade-marketing-diem-ban/references/nguyen-tac-chung.md`, `skills/trade-marketing-diem-ban/references/phap-ly-marketing-vn.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/trade-marketing-diem-ban/scripts/tinh_trade.py`, `skills/trade-marketing-diem-ban/scripts/vn_money.py`.
 
 ## Instructions
@@ -55,4 +55,15 @@ Quy định khuyến mại giữa thương nhân, hóa đơn cho chiết khấu 
 - Giả định mức tăng doanh số khi chưa thử nghiệm.
 - Đề xuất ép đại lý không bán hàng đối thủ, ấn định giá bán lại bắt buộc — có thể vi phạm pháp luật cạnh tranh `[CẦN KIỂM TRA]`; chuyển luật sư.
 - Chi thưởng, ký hợp đồng thay doanh nghiệp.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Canva** · **Google Calendar**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Đọc báo cáo bán hàng theo điểm bán, ảnh trưng bày trên Drive để chấm điểm, đo hiệu quả chương trình.
+2. Tạo POSM (poster, wobbler, standee) trên Canva; lên lịch đi thị trường, kiểm tra trưng bày.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

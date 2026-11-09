@@ -56,3 +56,15 @@ Quy tắc: giá vốn và số liệu thật **không được đoán**. Ngườ
 - Tự điền giá vốn, tỷ lệ chuyển đổi, doanh thu "ước chừng".
 - Lưu dữ liệu cá nhân của khách hàng vào hồ sơ.
 - Lập kế hoạch hay viết nội dung trong skill này.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ scripts/ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **Google Drive** · **Notion** · **Shopify**. Đọc quy tắc trong `references/ket-noi.md` trước khi dùng.
+
+1. Đọc catalogue, bảng giá, giới thiệu công ty trên Drive hoặc Notion để điền hồ sơ, không hỏi lại thông tin đã có.
+2. Có Shopify: lấy danh sách sản phẩm, giá bán, tồn kho hiện hành.
+3. Lưu hồ sơ doanh nghiệp thành một trang Notion hoặc file Docs trên Drive để các skill khác dùng lại.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->

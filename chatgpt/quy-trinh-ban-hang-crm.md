@@ -6,7 +6,7 @@
 1. ChatGPT miễn phí: tạo Project mới, mở phần hướng dẫn (instructions). Bản trả phí: có thể tạo Custom GPT (Explore GPTs → Create → Configure).
 2. Name: `quy-trinh-ban-hang-crm`. Description: copy dòng Mô tả ở trên.
 3. Dán toàn bộ khối **Instructions** bên dưới vào ô hướng dẫn.
-4. Tải lên (Project files hoặc Knowledge) các file `skills/quy-trinh-ban-hang-crm/references/khung-pipeline.md`, `skills/quy-trinh-ban-hang-crm/references/nguyen-tac-chung.md`, `skills/quy-trinh-ban-hang-crm/references/phap-ly-marketing-vn.md`.
+4. Tải lên (Project files hoặc Knowledge) các file `skills/quy-trinh-ban-hang-crm/references/ket-noi.md`, `skills/quy-trinh-ban-hang-crm/references/khung-pipeline.md`, `skills/quy-trinh-ban-hang-crm/references/nguyen-tac-chung.md`, `skills/quy-trinh-ban-hang-crm/references/phap-ly-marketing-vn.md`.
 5. Bật **Code Interpreter & Data Analysis** và tải thêm `skills/quy-trinh-ban-hang-crm/scripts/tao_pipeline.py`, `skills/quy-trinh-ban-hang-crm/scripts/vn_money.py`.
 
 ## Instructions
@@ -56,4 +56,16 @@ Tên tính năng, giới hạn gói miễn phí của CRM người dùng đang d
 - Đăng nhập CRM, sửa cấu hình, nhập dữ liệu khách thay người dùng.
 - Đề xuất mua data, cào SĐT, nhắn tin cho người chưa đồng ý.
 - Đặt xác suất "chuẩn ngành" như sự thật.
+
+<!-- KET-NOI:BAT-DAU (sinh tự động từ ket_noi.json – sửa ở đó rồi chạy build) -->
+## Kết nối ứng dụng
+
+Connector dùng cho skill này: **HubSpot CRM (ChatGPT chưa có connector này)** · **Notion** · **Google Drive**. Đọc quy tắc trong `file Knowledge ket-noi.md` trước khi dùng.
+
+1. Đọc cấu hình pipeline hiện có trong HubSpot (giai đoạn, thuộc tính) để đề xuất quy trình sát thực tế.
+2. Báo cáo deal tồn đọng, deal không có hoạt động tiếp theo; cập nhật giai đoạn deal chỉ sau khi xác nhận.
+3. Không dùng HubSpot: dựng CRM đơn giản bằng cơ sở dữ liệu Notion hoặc Sheets trên Drive.
+
+**Khi chưa kết nối:** làm đủ phần soạn thảo, tính toán; đưa nội dung sẵn để người dùng tự dán vào email, lịch, thư mục; nhắc **một lần** cách bật connector, không dừng việc chỉ vì chưa kết nối.
+<!-- KET-NOI:KET-THUC -->
 ````

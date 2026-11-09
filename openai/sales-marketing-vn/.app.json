@@ -1,0 +1,22 @@
+{
+  "apps": {
+    "gmail": {
+      "id": "connector_2128aebfecb84f64a069897515042a44"
+    },
+    "google-calendar": {
+      "id": "connector_947e0d954944416db111db556030eea6"
+    },
+    "google-drive": {
+      "id": "connector_5f3c8c41a1e54ad7a76272c89e2554fa"
+    },
+    "canva": {
+      "id": "connector_68df33b1a2d081918778431a9cfca8ba"
+    },
+    "shopify": {
+      "id": "asdk_app_69e65c430b3081919aa4d962ab5d1698"
+    },
+    "notion": {
+      "id": "asdk_app_69c18c28f1188191bf5b8445c4ab0a2e"
+    }
+  }
+}

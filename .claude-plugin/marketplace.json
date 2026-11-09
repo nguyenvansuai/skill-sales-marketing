@@ -10,103 +10,365 @@
       "name": "bao-cao-doi-soat-hieu-qua",
       "source": "./skills/bao-cao-doi-soat-hieu-qua",
       "description": "Đối soát và báo cáo hiệu quả marketing – bán hàng thật cho doanh nghiệp Việt Nam từ nhiều nguồn — báo cáo đơn sàn (Shopee, TikTok Shop, Lazada), CRM/inbox, POS cửa hàng, file chi phí quảng cáo (Meta, TikTok, Google), sao kê ngân hàng — loại đơn huỷ/hoàn, loại trùng đơn giữa các nguồn, không cộng tiền sàn chuyển về, so chuyển đổi nền tảng tự báo với đơn thật; ra doanh thu thật, ROAS thật, CAC, lợi nhuận sau marketing theo kênh và chiến dịch; B2B: giá trị pipeline, tỷ lệ thắng, chu kỳ bán; không ngoại suy dữ liệu thiếu. Dùng khi người dùng nói \"báo cáo marketing tháng này\", \"đối soát doanh thu các kênh\", \"quảng cáo báo ROAS 5 mà không có lời\", \"kênh nào hiệu quả nhất\", \"chi phí mỗi khách mới bao nhiêu\", \"tổng kết chiến dịch\", \"báo cáo cho sếp\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "shopify": {
+          "type": "http",
+          "url": "https://setup.shopify.com/mcp"
+        },
+        "tiktok-ads": {
+          "type": "http",
+          "url": "https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer"
+        },
+        "hubspot": {
+          "type": "http",
+          "url": "https://mcp.hubspot.com/anthropic"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "gmail": {
+          "type": "http",
+          "url": "https://gmailmcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "cham-soc-giu-chan-khach",
       "source": "./skills/cham-soc-giu-chan-khach",
       "description": "Chăm sóc khách hàng sau bán và giữ chân khách cho doanh nghiệp Việt Nam — hành trình chăm sóc theo thời điểm (sau giao hàng, hết hạn dùng, sinh nhật, ngày lễ, khách lâu không mua), chia nhóm khách theo lần mua gần nhất – số lần – giá trị (RFM), chương trình khách thân thiết, tích điểm, giới thiệu bạn bè, xử lý khiếu nại và đánh giá xấu, kéo khách quay lại; kênh Zalo OA/ZNS, email, SMS, gọi điện, nhóm Zalo/cộng đồng; chỉ gửi cho khách đã đồng ý, đúng khung giờ và tần suất theo NĐ 91/2020 và Luật 91/2025. Dùng khi người dùng nói \"chăm sóc khách cũ\", \"khách mua 1 lần rồi thôi\", \"làm chương trình tích điểm\", \"kịch bản Zalo OA\", \"nhắc khách mua lại\", \"trả lời khiếu nại\", \"chia nhóm khách hàng\", \"tăng tỷ lệ quay lại\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "shopify": {
+          "type": "http",
+          "url": "https://setup.shopify.com/mcp"
+        },
+        "hubspot": {
+          "type": "http",
+          "url": "https://mcp.hubspot.com/anthropic"
+        },
+        "gmail": {
+          "type": "http",
+          "url": "https://gmailmcp.googleapis.com/mcp/v1"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "gia-san-pham-khuyen-mai",
       "source": "./skills/gia-san-pham-khuyen-mai",
       "description": "Tính giá và thiết kế khuyến mại cho doanh nghiệp, hộ kinh doanh Việt Nam — P&L từng đơn sau phí sàn (Shopee, TikTok Shop, Lazada), phí ship, COD, hoàn đơn, chi phí quảng cáo; giá hòa vốn, ROAS và CPA hòa vốn, mức giảm tối đa còn lãi; giá đại lý theo bậc chiết khấu; kiểm khuyến mại theo NĐ 81/2018 sửa bởi NĐ 239/2026 và Thông tư 39/2025/TT-BCT (trần giảm 50%, khuyến mại tập trung, hàng cấm khuyến mại, khi nào phải thông báo/đăng ký). Dùng khi người dùng nói \"bán giá này có lời không\", \"tính giá bán\", \"giảm 30% còn lãi không\", \"ROAS bao nhiêu thì hòa vốn\", \"phí sàn ăn hết lời\", \"làm chương trình khuyến mại\", \"giảm 70% được không\", \"chiết khấu đại lý bao nhiêu\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "shopify": {
+          "type": "http",
+          "url": "https://setup.shopify.com/mcp"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "ho-so-doanh-nghiep",
       "source": "./skills/ho-so-doanh-nghiep",
       "description": "Lập và cập nhật hồ sơ doanh nghiệp dùng chung cho cả bộ skill sales – marketing Việt Nam — sản phẩm, giá bán và giá vốn, mô hình B2C/B2B, kênh bán (sàn, inbox, Zalo, đại lý, sales trực tiếp), khách hàng mục tiêu, đối thủ, pháp nhân, ngành có điều kiện quảng cáo (mỹ phẩm, thực phẩm, thiết bị y tế…), giọng thương hiệu, chính sách đổi trả, mục tiêu doanh thu. Trích từ website, catalogue, bảng giá; trường thiếu ghi [?] và chỉ hỏi phần thiếu. Dùng khi người dùng nói \"lập hồ sơ doanh nghiệp\", \"bắt đầu làm marketing cho shop tôi\", \"đây là thông tin công ty\", \"cập nhật giá mới\", \"đổi kênh bán\", \"nhớ thông tin sản phẩm của tôi\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "notion": {
+          "type": "http",
+          "url": "https://mcp.notion.com/mcp"
+        },
+        "shopify": {
+          "type": "http",
+          "url": "https://setup.shopify.com/mcp"
+        }
+      }
     },
     {
       "name": "ke-hoach-ngan-sach-kpi",
       "source": "./skills/ke-hoach-ngan-sach-kpi",
       "description": "Lập kế hoạch marketing – bán hàng theo tháng/quý/năm cho doanh nghiệp Việt Nam bằng cách tính ngược từ doanh thu mục tiêu — B2C online (đơn → tin nhắn/lead → ngân sách quảng cáo, so CAC với CPA hòa vốn), B2B (hợp đồng → cơ hội → lead → hoạt động mỗi sales mỗi tuần), đại lý/điểm bán (số điểm hoạt động, mở mới, ngân sách trade); chia tháng theo mùa vụ (Tết, ngày đôi, mùa cao điểm ngành), phân bổ ngân sách giữa các kênh, 3 kịch bản độ nhạy. Chỉ dùng số liệu thật của doanh nghiệp, không dùng benchmark không nguồn. Dùng khi người dùng nói \"lập kế hoạch marketing tháng sau\", \"muốn đạt 500 triệu thì cần bao nhiêu ngân sách\", \"tính KPI ngược\", \"mỗi sales cần gọi bao nhiêu cuộc\", \"kế hoạch Tết\", \"phân bổ ngân sách cho các kênh\", \"cần mở bao nhiêu đại lý\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "shopify": {
+          "type": "http",
+          "url": "https://setup.shopify.com/mcp"
+        },
+        "hubspot": {
+          "type": "http",
+          "url": "https://mcp.hubspot.com/anthropic"
+        },
+        "tiktok-ads": {
+          "type": "http",
+          "url": "https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer"
+        },
+        "google-calendar": {
+          "type": "http",
+          "url": "https://calendarmcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "kich-ban-tu-van-chot-don",
       "source": "./skills/kich-ban-tu-van-chot-don",
       "description": "Viết kịch bản tư vấn và chốt đơn cho đội bán hàng Việt Nam — trả lời inbox Facebook/Zalo/TikTok, gọi điện tư vấn (telesale cho khách đã để lại thông tin), tư vấn tại cửa hàng, demo B2B; câu mở đầu, câu hỏi khai thác nhu cầu, giới thiệu theo lợi ích, xử lý từ chối (\"đắt quá\", \"để suy nghĩ\", \"bên kia rẻ hơn\", \"hỏi chồng/vợ đã\", \"sợ không hợp\"), chốt đơn, bán thêm, theo dõi khách im lặng; bộ câu trả lời mẫu cho chatbot/nhân viên; tài liệu đào tạo sales mới và chấm điểm cuộc tư vấn từ bản ghi chat. Không hứa hẹn sai sự thật, không gây áp lực giả. Dùng khi người dùng nói \"viết kịch bản chốt sale\", \"khách chê đắt trả lời sao\", \"kịch bản trả lời inbox\", \"khách seen không rep\", \"đào tạo nhân viên tư vấn\", \"chấm điểm đoạn chat này\", \"kịch bản telesale\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "notion": {
+          "type": "http",
+          "url": "https://mcp.notion.com/mcp"
+        },
+        "gmail": {
+          "type": "http",
+          "url": "https://gmailmcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "kiem-tra-phap-ly-quang-cao",
       "source": "./skills/kiem-tra-phap-ly-quang-cao",
       "description": "Soát nội dung quảng cáo, bài đăng, kịch bản KOL/KOC, livestream, tin nhắn hàng loạt, form thu thông tin khách theo luật Việt Nam hiện hành — từ ngữ tuyệt đối \"nhất, số 1, duy nhất\" thiếu bằng chứng (khoản 11 Điều 8 Luật Quảng cáo), so sánh với đối thủ (khoản 10, sửa 2025), người có ảnh hưởng phải ghi rõ là quảng cáo (Luật 75/2025), mỹ phẩm và thực phẩm nói như thuốc, thông tin bắt buộc cho thực phẩm bảo vệ sức khỏe (NĐ 342/2025), giảm giá quá 50% (NĐ 81/2018 sửa 2024, 2026), xin đồng ý dữ liệu cá nhân (Luật 91/2025), tin nhắn rác (NĐ 91/2020). Chạy công cụ soát tự động, ra bảng lỗi kèm căn cứ và cách sửa, kết luận được đăng / sửa rồi đăng / cần xin xác nhận nội dung. Dùng khi người dùng nói \"kiểm tra bài quảng cáo này\", \"content này có vi phạm không\", \"soát kịch bản KOC\", \"được ghi tốt nhất không\", \"quảng cáo thực phẩm chức năng cần ghi gì\", \"form này có đúng luật dữ liệu cá nhân không\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "canva": {
+          "type": "http",
+          "url": "https://mcp.canva.com/mcp"
+        }
+      }
     },
     {
       "name": "koc-affiliate-doi-tac",
       "source": "./skills/koc-affiliate-doi-tac",
       "description": "Tìm, thẩm định, ký và đo hiệu quả hợp tác KOL, KOC, người có ảnh hưởng, affiliate (TikTok Shop, Shopee, website), cộng tác viên bán hàng, đối tác chéo (co-marketing) cho doanh nghiệp Việt Nam — tiêu chí chọn theo dữ liệu thật thay vì lượt theo dõi, tính số đơn hòa vốn trước khi ký, brief nội dung đúng Luật Quảng cáo sửa đổi 2025 (người có ảnh hưởng phải dùng/hiểu sản phẩm, phải thông báo là quảng cáo), điều khoản hợp đồng, khấu trừ thuế khi trả tiền cho cá nhân, chương trình giới thiệu khách. Dùng khi người dùng nói \"thuê KOC review\", \"tìm KOL cho sản phẩm\", \"làm affiliate TikTok\", \"hợp đồng với KOC\", \"KOC này có đáng tiền không\", \"brief cho creator\", \"chương trình giới thiệu bạn bè\", \"hợp tác với thương hiệu khác\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "gmail": {
+          "type": "http",
+          "url": "https://gmailmcp.googleapis.com/mcp/v1"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "hubspot": {
+          "type": "http",
+          "url": "https://mcp.hubspot.com/anthropic"
+        }
+      }
     },
     {
       "name": "nghien-cuu-thi-truong",
       "source": "./skills/nghien-cuu-thi-truong",
       "description": "Nghiên cứu khách hàng, đối thủ và định vị cho doanh nghiệp Việt Nam (B2C và B2B) từ dữ liệu thật — tin nhắn inbox, đánh giá trên sàn, bình luận, phỏng vấn khách, phiếu khảo sát, trang của đối thủ — ra chân dung khách hàng theo việc cần làm (JTBD), bảng so sánh đối thủ có nguồn và ngày, câu định vị và thông điệp chính. Mỗi nhận định gắn nhãn bằng chứng, không bịa số liệu thị trường. Dùng khi người dùng nói \"khách hàng của tôi là ai\", \"phân tích đối thủ\", \"so sánh với shop đối thủ\", \"định vị thương hiệu\", \"khách hay chê gì\", \"đọc giúp 200 đánh giá này\", \"insight khách hàng\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "gmail": {
+          "type": "http",
+          "url": "https://gmailmcp.googleapis.com/mcp/v1"
+        },
+        "hubspot": {
+          "type": "http",
+          "url": "https://mcp.hubspot.com/anthropic"
+        },
+        "shopify": {
+          "type": "http",
+          "url": "https://setup.shopify.com/mcp"
+        }
+      }
     },
     {
       "name": "pr-su-kien-khung-hoang",
       "source": "./skills/pr-su-kien-khung-hoang",
       "description": "Soạn thông cáo báo chí, danh sách liên hệ báo chí, kế hoạch sự kiện (ra mắt sản phẩm, khai trương, hội thảo, workshop, webinar, hội chợ) và xử lý khủng hoảng truyền thông cho doanh nghiệp Việt Nam — khách bóc phốt, đánh giá xấu lan truyền, sản phẩm lỗi, tin sai về thương hiệu — với quy trình 24 giờ đầu, phân vai, mẫu phản hồi công khai và tin nhắn riêng, việc không được làm. Dùng khi người dùng nói \"viết thông cáo báo chí\", \"lên kế hoạch sự kiện ra mắt\", \"tổ chức hội thảo\", \"khách bóc phốt trên Facebook\", \"bị review 1 sao hàng loạt\", \"khủng hoảng truyền thông\", \"phản hồi bài tố cáo\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "gmail": {
+          "type": "http",
+          "url": "https://gmailmcp.googleapis.com/mcp/v1"
+        },
+        "google-calendar": {
+          "type": "http",
+          "url": "https://calendarmcp.googleapis.com/mcp/v1"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "canva": {
+          "type": "http",
+          "url": "https://mcp.canva.com/mcp"
+        }
+      }
     },
     {
       "name": "quan-ly-doi-sales",
       "source": "./skills/quan-ly-doi-sales",
       "description": "Quản lý đội bán hàng cho doanh nghiệp Việt Nam — giao chỉ tiêu theo người từ kế hoạch doanh thu, KPI hoạt động (cuộc gọi, lead, cuộc hẹn, báo giá) và KPI kết quả, cơ chế hoa hồng theo mức đạt chỉ tiêu tính trên tiền đã thu, dự báo doanh số tháng từ pipeline (cam kết / có khả năng / kỳ vọng), họp đội hằng tuần, đánh giá và kèm cặp sales, tuyển và đào tạo sales mới. Dùng khi người dùng nói \"giao KPI cho sales\", \"tính hoa hồng tháng này\", \"cơ chế lương thưởng sales\", \"dự báo doanh số tháng sau\", \"họp sales hằng tuần\", \"nhân viên sales không đạt chỉ tiêu\", \"đánh giá sales\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "hubspot": {
+          "type": "http",
+          "url": "https://mcp.hubspot.com/anthropic"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "google-calendar": {
+          "type": "http",
+          "url": "https://calendarmcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "quang-cao-truc-tuyen",
       "source": "./skills/quang-cao-truc-tuyen",
       "description": "Lên kế hoạch, viết mẫu và đọc số quảng cáo trả phí cho doanh nghiệp Việt Nam trên Facebook/Instagram (Meta), TikTok, Google, YouTube, Zalo Ads, quảng cáo trên sàn — chọn mục tiêu (tin nhắn, lead, đơn hàng, cuộc gọi), cấu trúc chiến dịch, tệp đối tượng, ngân sách thử nghiệm, mẫu quảng cáo và biến thể A/B; đọc file xuất số liệu để chẩn đoán CPM, CTR, CPC, chi phí/kết quả, so ROAS nền tảng báo với ROAS thật, phân loại dừng/giữ/tăng theo ngưỡng hòa vốn của chính doanh nghiệp. Dùng khi người dùng nói \"chạy quảng cáo Facebook\", \"ads đắt quá\", \"giá tin nhắn cao\", \"đọc giúp số liệu quảng cáo\", \"nên tắt chiến dịch nào\", \"viết mẫu quảng cáo\", \"có nên tăng ngân sách không\", \"ROAS báo 5 mà không có lời\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "tiktok-ads": {
+          "type": "http",
+          "url": "https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer"
+        },
+        "canva": {
+          "type": "http",
+          "url": "https://mcp.canva.com/mcp"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "quy-trinh-ban-hang-crm",
       "source": "./skills/quy-trinh-ban-hang-crm",
       "description": "Thiết kế quy trình bán hàng và CRM cho doanh nghiệp Việt Nam — B2C chốt qua inbox Facebook/Zalo/điện thoại, B2B chu kỳ dài (lead → đánh giá → khảo sát/demo → báo giá → đàm phán → hợp đồng → thu tiền), phát triển đại lý/điểm bán — định nghĩa giai đoạn và tiêu chí chuyển, chấm điểm lead, quy tắc chia lead cho sales, thời gian phản hồi cam kết, chuyển giao marketing → sales, lý do thất bại; tạo file Excel pipeline có công thức thật khi chưa có CRM, hoặc map giai đoạn/trường dữ liệu vào CRM đang dùng (HubSpot, Getfly, Bitrix24, Base, Pancake, Zalo OA…); lưu bằng chứng đồng ý của khách theo Luật 91/2025. Dùng khi người dùng nói \"xây quy trình bán hàng\", \"quản lý khách hàng tiềm năng\", \"làm CRM bằng Excel\", \"chia lead cho sales\", \"lead bị bỏ sót\", \"chấm điểm lead\", \"pipeline\", \"marketing đẩy lead sales không gọi\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "hubspot": {
+          "type": "http",
+          "url": "https://mcp.hubspot.com/anthropic"
+        },
+        "notion": {
+          "type": "http",
+          "url": "https://mcp.notion.com/mcp"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "seo-website-landing",
       "source": "./skills/seo-website-landing",
       "description": "Kiểm tra và tối ưu website, trang bán hàng (landing page) cho doanh nghiệp Việt Nam — SEO trên Google cho từ khóa tiếng Việt (có dấu/không dấu, tìm theo khu vực \"gần đây\", \"quận 7\"), cấu trúc trang, tiêu đề, mô tả, tốc độ trên điện thoại, dữ liệu có cấu trúc, Google Business Profile cho cửa hàng; tối ưu để được AI (ChatGPT, Gemini, Google AI Overviews) trích dẫn; viết và soát landing page theo phễu chuyển đổi (tiêu đề, lợi ích, bằng chứng, form, nút Zalo/gọi), thông tin bắt buộc của website bán hàng. Dùng khi người dùng nói \"kiểm tra SEO website\", \"web không lên Google\", \"viết landing page\", \"trang bán hàng ít đơn\", \"tối ưu Google Maps cửa hàng\", \"lên top tìm kiếm\", \"AI có nhắc tới thương hiệu tôi không\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "shopify": {
+          "type": "http",
+          "url": "https://setup.shopify.com/mcp"
+        }
+      }
     },
     {
       "name": "thuong-hieu-noi-dung",
       "source": "./skills/thuong-hieu-noi-dung",
       "description": "Xây giọng thương hiệu, lịch nội dung tháng và viết bài cho kênh của doanh nghiệp Việt Nam — fanpage Facebook, TikTok, Zalo OA, website/blog, email, YouTube Shorts — theo mục tiêu nhận biết, nuôi dưỡng hay chuyển đổi; mỗi bài có hook, thân bài, lời kêu gọi, hashtag, gợi ý hình/video; một ý tưởng tái dùng cho nhiều kênh. Viết theo hồ sơ doanh nghiệp, giữ xưng hô và từ cấm của thương hiệu, gắn nhãn quảng cáo/AI khi cần và tự soát pháp lý trước khi giao. Dùng khi người dùng nói \"viết bài fanpage\", \"lên lịch nội dung tháng 12\", \"viết caption TikTok\", \"giọng văn thương hiệu\", \"bài đăng Zalo OA\", \"viết blog chuẩn SEO\" (phần SEO kỹ thuật dùng seo-website-landing), \"ý tưởng content Tết\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "canva": {
+          "type": "http",
+          "url": "https://mcp.canva.com/mcp"
+        },
+        "notion": {
+          "type": "http",
+          "url": "https://mcp.notion.com/mcp"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "google-calendar": {
+          "type": "http",
+          "url": "https://calendarmcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "tim-khach-b2b-bao-gia",
       "source": "./skills/tim-khach-b2b-bao-gia",
       "description": "Tìm khách hàng doanh nghiệp (B2B) và báo giá cho doanh nghiệp Việt Nam — xác định chân dung khách lý tưởng, lập danh sách khách tiềm năng từ nguồn hợp pháp (website, danh bạ ngành, hội chợ, giới thiệu, LinkedIn), viết thư/tin chào hàng qua email, Zalo, LinkedIn, kịch bản gọi điện, chuỗi theo dõi; tạo báo giá có thuế GTGT từng dòng, chiết khấu, hiệu lực, điều kiện thanh toán, số tiền bằng chữ; hồ sơ năng lực, đề xuất giải pháp; xưng hô đúng kiểu B2B. Tuân thủ chống thư rác, cuộc gọi rác (NĐ 91/2020) và dữ liệu cá nhân (Luật 91/2025). Dùng khi người dùng nói \"tìm khách doanh nghiệp\", \"viết email chào hàng\", \"làm báo giá\", \"báo giá có VAT\", \"gửi hồ sơ năng lực\", \"kịch bản gọi điện cho công ty\", \"khách không trả lời email\", \"viết đề xuất hợp tác\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "hubspot": {
+          "type": "http",
+          "url": "https://mcp.hubspot.com/anthropic"
+        },
+        "gmail": {
+          "type": "http",
+          "url": "https://gmailmcp.googleapis.com/mcp/v1"
+        },
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "google-calendar": {
+          "type": "http",
+          "url": "https://calendarmcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "trade-marketing-diem-ban",
       "source": "./skills/trade-marketing-diem-ban",
       "description": "Thiết kế và đo hiệu quả trade marketing cho kênh truyền thống ở Việt Nam — nhà phân phối, đại lý cấp 1–2, tạp hóa, cửa hàng, siêu thị/chuỗi — chương trình trưng bày, POSM, thưởng doanh số theo bậc, chiết khấu thanh toán sớm, chính sách đại lý, tuyển và kích hoạt điểm bán mới, kiểm tra độ phủ và sell-out; tính lãi/lỗ của chương trình theo mức tăng doanh số đo từ thử nghiệm thật, tính thưởng từng đại lý từ file doanh số. Dùng khi người dùng nói \"làm chương trình cho đại lý\", \"chính sách đại lý\", \"thưởng doanh số bậc thang\", \"trưng bày tại tạp hóa\", \"mở rộng điểm bán\", \"chương trình trade có lời không\", \"tính thưởng đại lý quý này\".",
-      "category": "sales-marketing"
+      "category": "sales-marketing",
+      "mcpServers": {
+        "google-drive": {
+          "type": "http",
+          "url": "https://drivemcp.googleapis.com/mcp/v1"
+        },
+        "canva": {
+          "type": "http",
+          "url": "https://mcp.canva.com/mcp"
+        },
+        "google-calendar": {
+          "type": "http",
+          "url": "https://calendarmcp.googleapis.com/mcp/v1"
+        }
+      }
     },
     {
       "name": "tron-bo-skill-sales-marketing",
