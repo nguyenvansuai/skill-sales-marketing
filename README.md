@@ -65,7 +65,27 @@ Chuỗi dùng gợi ý: `ho-so-doanh-nghiep` → `gia-san-pham-khuyen-mai` → `
 ```
 Hoặc cài từng skill: `/plugin install gia-san-pham-khuyen-mai@skill-sales-marketing`.
 
-### ChatGPT
+### ChatGPT / Codex – cả bộ plugin (OpenAI)
+
+Gói plugin cho ChatGPT và Codex nằm ở [`openai/sales-marketing-vn/`](openai/sales-marketing-vn/), theo cấu trúc portable của OpenAI (`plugin.json`, `skills/`), gồm **17 skill**.
+
+**ChatGPT desktop / Codex** – cài cá nhân, không cần OpenAI duyệt:
+
+```bash
+codex plugin marketplace add nguyenvansuai/skill-sales-marketing
+```
+
+```bash
+codex plugin add sales-marketing-vn@skill-sales-marketing
+```
+
+Hoặc trong ứng dụng ChatGPT desktop: **Plugins** → chọn nguồn **Sales – Marketing VN** → **Install**. Khi dùng: mở chat chế độ **Work**, gõ `@` và chọn plugin.
+
+**ChatGPT web / chia sẻ rộng**: muốn plugin xuất hiện trong thư mục plugin chung của ChatGPT phải gửi OpenAI duyệt qua [cổng nộp plugin](https://platform.openai.com/plugins) (cần xác minh danh tính). File nén sẵn để nộp: [`dist/sales-marketing-vn-chatgpt.zip`](dist/). Quản trị viên workspace ChatGPT có thể **Publish** plugin cá nhân cho cả workspace.
+
+Sau khi sửa skill, sinh lại gói: `python3 scripts/build_openai.py`.
+
+### ChatGPT – từng skill (Project / Custom GPT)
 Mở [`chatgpt/<ten-skill>.md`](chatgpt/) và làm theo hướng dẫn trong file: dán Instructions vào Project hoặc Custom GPT, tải các file `references/` (và `scripts/` nếu có) lên Knowledge.
 
 ## Câu lệnh mẫu

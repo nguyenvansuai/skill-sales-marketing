@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sales-marketing-vn",
+  "version": "1.0.0",
+  "description": "17 skill sales – marketing cho doanh nghiệp, hộ kinh doanh Việt Nam theo luật 2026.",
+  "author": {
+    "name": "nguyenvansuai",
+    "url": "https://github.com/nguyenvansuai"
+  },
+  "homepage": "https://github.com/nguyenvansuai/skill-sales-marketing",
+  "repository": "https://github.com/nguyenvansuai/skill-sales-marketing",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "marketing",
+    "viet-nam"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Sales – Marketing VN",
+        "shortDescription": "17 skill sales – marketing cho doanh nghiệp, hộ kinh doanh Việt Nam theo luật 2026.",
+        "longDescription": "Bộ 17 skill làm việc như một phòng sales – marketing cho doanh nghiệp, hộ kinh doanh Việt Nam (B2C, B2B, online, offline): hồ sơ doanh nghiệp, nghiên cứu thị trường, giá – khuyến mại, kế hoạch KPI – ngân sách, nội dung thương hiệu, kiểm tra pháp lý quảng cáo (Luật Quảng cáo sửa đổi 2025), PR – sự kiện – khủng hoảng, quảng cáo trực tuyến, SEO, trade marketing, KOC – affiliate, quy trình bán hàng CRM, tìm khách B2B – báo giá, kịch bản chốt đơn, quản lý đội sales, giữ chân khách, đối soát hiệu quả.",
+        "developerName": "nguyenvansuai",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://github.com/nguyenvansuai/skill-sales-marketing",
+        "defaultPrompt": [
+          "Bán giá 199.000đ trên Shopee thì giảm tối đa bao nhiêu còn lãi?",
+          "Kiểm tra bài quảng cáo thực phẩm chức năng này có vi phạm luật không.",
+          "Lập kế hoạch marketing tháng sau để đạt doanh thu 500 triệu."
+        ],
+        "brandColor": "#B45309",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

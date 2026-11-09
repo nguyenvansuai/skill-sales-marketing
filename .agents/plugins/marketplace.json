@@ -1,0 +1,20 @@
+{
+  "name": "skill-sales-marketing",
+  "interface": {
+    "displayName": "Sales – Marketing VN"
+  },
+  "plugins": [
+    {
+      "name": "sales-marketing-vn",
+      "source": {
+        "source": "local",
+        "path": "./openai/sales-marketing-vn"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

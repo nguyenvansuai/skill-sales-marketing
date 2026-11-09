@@ -1,0 +1,34 @@
+{
+  "plugin_name": "sales-marketing-vn",
+  "display_name": "Sales – Marketing VN",
+  "short_description": "17 skill sales – marketing cho doanh nghiệp, hộ kinh doanh Việt Nam theo luật 2026.",
+  "long_description": "Bộ 17 skill làm việc như một phòng sales – marketing cho doanh nghiệp, hộ kinh doanh Việt Nam (B2C, B2B, online, offline): hồ sơ doanh nghiệp, nghiên cứu thị trường, giá – khuyến mại, kế hoạch KPI – ngân sách, nội dung thương hiệu, kiểm tra pháp lý quảng cáo (Luật Quảng cáo sửa đổi 2025), PR – sự kiện – khủng hoảng, quảng cáo trực tuyến, SEO, trade marketing, KOC – affiliate, quy trình bán hàng CRM, tìm khách B2B – báo giá, kịch bản chốt đơn, quản lý đội sales, giữ chân khách, đối soát hiệu quả.",
+  "default_prompts": [
+    "Bán giá 199.000đ trên Shopee thì giảm tối đa bao nhiêu còn lãi?",
+    "Kiểm tra bài quảng cáo thực phẩm chức năng này có vi phạm luật không.",
+    "Lập kế hoạch marketing tháng sau để đạt doanh thu 500 triệu."
+  ],
+  "brand_color": "#B45309",
+  "keywords": [
+    "sales",
+    "marketing",
+    "viet-nam"
+  ],
+  "icon": ".claude-plugin/icon.png",
+  "thay_the": [
+    [
+      "(Claude Code)",
+      "(khi chạy trong môi trường có thư mục làm việc, ví dụ Codex)"
+    ],
+    [
+      "Claude Code: lưu thành",
+      "Môi trường có thư mục làm việc (Codex, ChatGPT desktop): lưu thành"
+    ],
+    [
+      "claude.ai / ChatGPT: tải file hồ sơ lên Project / Knowledge",
+      "ChatGPT (web): tải file hồ sơ lên Project / tệp đính kèm"
+    ]
+  ],
+  "repository": "https://github.com/nguyenvansuai/skill-sales-marketing",
+  "category": "Productivity"
+}
