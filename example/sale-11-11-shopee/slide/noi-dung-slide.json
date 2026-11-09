@@ -1,0 +1,65 @@
+{
+  "mau": "#C2410C",
+  "plugin_ten": "Sales – Marketing",
+  "tieu_de": "Sale 11.11 trên Shopee: giảm 40% có lãi không?",
+  "tinh_huong": "Marketing shop mỹ phẩm online · sếp muốn giảm 40% serum 450k trong 3 ngày 10–12/11 · kèm banner \"trắng da sau 7 ngày\"",
+  "thu_cong": {
+    "buoc": [
+      "Lấy giá sale trừ giá vốn: 270k − 135k = \"lãi 135k\"",
+      "Quên phí sàn, Freeship/Voucher Xtra, đóng gói, hoàn đơn",
+      "Không tính trước quảng cáo mùa sale đắt hơn",
+      "Chép câu quảng cáo của đối thủ cho \"bắt trend\"",
+      "Đăng banner, chạy Shopee Ads"
+    ],
+    "thoi_gian": "Nhanh, nhưng tưởng lãi mà thực ra lỗ",
+    "rui_ro": [
+      "Thực tế lỗ 14.400đ mỗi đơn – bán càng nhiều càng lỗ",
+      "\"Trị tận gốc\", \"số 1\", \"bác sĩ khuyên dùng\": bị gỡ sản phẩm, phạt",
+      "Giá gốc ảo 750k, \"duy nhất hôm nay\": vi phạm khuyến mại"
+    ]
+  },
+  "plugin": {
+    "buoc": [
+      "Đính kèm hồ sơ shop, bảng phí, nội dung quảng cáo – gõ 1 câu",
+      "gia-san-pham-khuyen-mai tính lãi lỗ từng đơn sau mọi loại phí",
+      "Tính mức giảm tối đa còn lãi, ROAS hòa vốn, kiểm tra trần khuyến mại 50%",
+      "kiem-tra-phap-ly-quang-cao chỉ từng câu vi phạm và căn cứ",
+      "Viết lại tiêu đề, mô tả, banner đúng luật"
+    ],
+    "thoi_gian": "Khoảng 10 phút, quyết định có số liệu",
+    "loi_ich": [
+      "Biết trước giảm 40% lỗ, đổi sang 25% vẫn lãi 36.900đ/đơn",
+      "Biết ROAS phải đạt 4,86 mới hòa vốn khi chạy Ads",
+      "Nội dung đã soát, ít rủi ro bị gỡ, bị phạt"
+    ]
+  },
+  "demo": {
+    "ten": "Serum Lumi Glow – sale 11.11",
+    "mo_ta": "Shop Lumi Beauty trên Shopee (giả lập) · mức phí sàn là số minh họa, dữ liệu đặt sẵn trong dau-vao/",
+    "dau_vao": [
+      "ho-so-shop.md (sản phẩm, công dụng đã công bố)",
+      "bang-phi-shopee.xlsx (giá vốn, phí sàn, hoàn đơn, Ads)",
+      "noi-dung-quang-cao.txt (tiêu đề, mô tả, banner – cài sẵn lỗi)"
+    ],
+    "prompt": [
+      "Shop tôi bán serum trên Shopee (hồ sơ và bảng phí đính kèm).",
+      "Sếp muốn giảm 40% dịp 11.11, từ 10/11 đến 12/11/2026. Hãy:",
+      "1. Tính mỗi đơn lãi hay lỗ sau toàn bộ phí sàn, đóng gói, hoàn đơn, quảng cáo.",
+      "2. Giảm tối đa bao nhiêu % vẫn có lãi? ROAS bao nhiêu thì hòa vốn?",
+      "3. Chương trình có vi phạm quy định khuyến mại không?",
+      "4. Soát tiêu đề, mô tả, banner; chỉ câu vi phạm và viết lại bản đúng luật."
+    ],
+    "ket_qua": {
+      "nhan_so": "Giảm 40%: lợi nhuận mỗi đơn",
+      "so": "−14.400đ",
+      "y": [
+        "Giảm tối đa 35,8% để hòa vốn",
+        "ROAS hòa vốn ở giá sale: 4,86",
+        "Giá gốc 750k là giá ảo; \"duy nhất hôm nay\" sai",
+        "8 câu vi phạm + 3 phương án viết lại"
+      ]
+    },
+    "connector": "Shopify/file đối soát trên Drive lấy giá vốn, tỷ lệ hoàn thật → tính giá → soát nội dung → Canva làm banner từ câu đã duyệt. (Shopee chưa có connector: tải file báo cáo.)",
+    "nguoi_lam": "thay mức phí minh họa bằng biểu phí thật trong Kênh Người Bán, quyết định mức giảm, duyệt nội dung cuối và tự đăng."
+  }
+}
